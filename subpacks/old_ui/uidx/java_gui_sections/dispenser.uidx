@@ -1,0 +1,8 @@
+{
+  "namespace": "dispenser_java_dx",
+
+  "dialog_bg_dispenser@java_gui_common.image_panel": {
+    "$texture": "assets/minecraft/textures/gui/container/dispenser",
+    "$uv_size": [ 176, 166 ]
+  }
+}

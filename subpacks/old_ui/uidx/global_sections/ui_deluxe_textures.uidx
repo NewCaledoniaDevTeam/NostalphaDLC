@@ -1,0 +1,538 @@
+{
+  "namespace": "ui_deluxe_textures",
+
+  /*///////////////////////////////////////////////////////////////////////////
+  //  Main.
+  ///////////////////////////////////////////////////////////////////////////*/
+
+  "dialog_background": {
+    "type": "image",
+    "texture": "textures/uidx/dialog_background"
+  },
+
+  "scroll_panel": {
+    "type": "image",
+    "texture": "textures/uidx/scroll_panel"
+  },
+
+  /*Top Tab*/
+
+  "TabTopBack": {
+    "type": "image",
+    "texture": "textures/uidx/TabTopBack"
+  },
+
+  "TabTopBackLeftMost": {
+    "type": "image",
+    "texture": "textures/uidx/TabTopBackLeftMost"
+  },
+
+  "TabTopBackRightMost": {
+    "type": "image",
+    "texture": "textures/uidx/TabTopBackRightMost"
+  },
+
+  "TabTopFront": {
+    "type": "image",
+    "texture": "textures/uidx/TabTopFront"
+  },
+
+  "TabTopFrontLeftMost": {
+    "type": "image",
+    "texture": "textures/uidx/TabTopFrontLeftMost"
+  },
+
+  "TabTopFrontRightMost": {
+    "type": "image",
+    "texture": "textures/uidx/TabTopFrontRightMost"
+  },
+
+  /*///////////////////////////////////////////////////////////////////////////
+  //  Buttons.
+  ///////////////////////////////////////////////////////////////////////////*/
+
+  "dark_button_default": {
+    "type": "image",
+    "texture": "textures/uidx/dark_button_default"
+  },
+
+  "dark_button_hover": {
+    "type": "image",
+    "texture": "textures/uidx/dark_button_hover"
+  },
+
+  "dark_button_pressed": {
+    "type": "image",
+    "texture": "textures/uidx/dark_button_pressed"
+  },
+
+  "dark_button_locked": {
+    "type": "image",
+    "texture": "textures/uidx/dark_button_locked"
+  },
+
+  /*///////////////////////////////////////////////////////////////////////////
+  //  Icons.
+  ///////////////////////////////////////////////////////////////////////////*/
+
+  "icon_edit": {
+    "type": "image",
+    "texture": "textures/uidx/icon_edit",
+    "size": [ 16, 16 ]
+  },
+
+  "icon_remove": {
+    "type": "image",
+    "texture": "textures/uidx/icon_remove",
+    "size": [ 11, 11 ]
+  },
+
+  "dot_1": {
+    "type": "image",
+    "texture": "textures/uidx/dot_1",
+    "size": [ 9, 9 ]
+  },
+
+  "dot_2": {
+    "type": "image",
+    "texture": "textures/uidx/dot_2",
+    "size": [ 9, 9 ]
+  },
+
+  "dot_3": {
+    "type": "image",
+    "texture": "textures/uidx/dot_3",
+    "size": [ 9, 9 ]
+  },
+
+  "Ping_Green": {
+    "type": "image",
+    "texture": "textures/uidx/Ping_Green",
+    "size": [ 9, 9 ]
+  },
+
+  "Ping_Offline_Red": {
+    "type": "image",
+    "texture": "textures/uidx/Ping_Offline_Red",
+    "size": [ 9, 9 ]
+  },
+
+  "Ping_Red": {
+    "type": "image",
+    "texture": "textures/uidx/Ping_Red",
+    "size": [ 9, 9 ]
+  },
+
+  "Ping_Yellow": {
+    "type": "image",
+    "texture": "textures/uidx/Ping_Yellow",
+    "size": [ 9, 9 ]
+  },
+
+  /*///////////////////////////////////////////////////////////////////////////
+  //  Anvil.
+  ///////////////////////////////////////////////////////////////////////////*/
+
+  "dialog_background_anvil": {
+    "type": "image",
+    "texture": "textures/uidx/anvil/anvil_panel",
+    "size": [ 176, 166 ]
+  },
+
+  "anvil_text_edit_active": {
+    "type": "image",
+    "texture": "textures/uidx/anvil/anvil_text_edit_active",
+    "size": [ "100%", "100%" ]
+  },
+
+  "anvil_text_edit_inactive@ui_deluxe_textures.anvil_text_edit_active": {
+    "texture": "textures/uidx/anvil/anvil_text_edit_inactive"
+  },
+
+  "anvil_text_edit_active_hover@ui_deluxe_textures.anvil_text_edit_active": {
+    "texture": "textures/uidx/anvil/anvil_text_edit_active_hover"
+  },
+
+  "cross_out_icon": {
+    "type": "image",
+    "texture": "textures/uidx/anvil/anvil_cross_out",
+    "size": [ 28, 21 ]
+  },
+
+  /*///////////////////////////////////////////////////////////////////////////
+  //  Beacon.
+  ///////////////////////////////////////////////////////////////////////////*/
+
+  "dialog_background_beacon": {
+    "type": "image",
+    "texture": "textures/uidx/beacon/beacon_panel",
+    "size": [ 256, 219 ]
+  },
+
+  "button_unchecked_default": {
+    "type": "image",
+    "texture": "textures/uidx/beacon/beacon_button_unchecked_default",
+    "size": [ 22, 22 ]
+  },
+
+  "button_unchecked_hover": {
+    "type": "image",
+    "texture": "textures/uidx/beacon/beacon_button_unchecked_hover",
+    "size": [ 22, 22 ]
+  },
+
+  "button_checked": {
+    "type": "image",
+    "texture": "textures/uidx/beacon/beacon_button_checked",
+    "size": [ 22, 22 ]
+  },
+
+  "button_locked": {
+    "type": "image",
+    "texture": "textures/uidx/beacon/beacon_button_locked",
+    "size": [ 22, 22 ]
+  },
+
+  "confirm_icon": {
+    "type": "image",
+    "texture": "textures/uidx/beacon/beacon_confirm_icon",
+    "size": [ 21, 22 ]
+  },
+
+  "cancel_icon": {
+    "type": "image",
+    "texture": "textures/uidx/beacon/beacon_cancel_icon",
+    "size": [ 21, 22 ]
+  },
+
+  "speed_icon_image": {
+    "type": "image",
+    "texture": "textures/ui/speed_effect",
+    "size": [ 18, 18 ]
+  },
+
+  "haste_icon_image": {
+    "type": "image",
+    "texture": "textures/ui/haste_effect",
+    "size": [ 18, 18 ]
+  },
+
+  "resist_icon_image": {
+    "type": "image",
+    "texture": "textures/ui/resistance_effect",
+    "size": [ 18, 18 ]
+  },
+
+  "jump_icon_image": {
+    "type": "image",
+    "texture": "textures/ui/jump_boost_effect",
+    "size": [ 18, 18 ]
+  },
+
+  "strength_icon_image": {
+    "type": "image",
+    "texture": "textures/ui/strength_effect",
+    "size": [ 18, 18 ]
+  },
+
+  "regen_icon_image": {
+    "type": "image",
+    "texture": "textures/ui/regeneration_effect",
+    "size": [ 18, 18 ]
+  },
+
+  /*///////////////////////////////////////////////////////////////////////////
+  //  Brewing Stand.
+  ///////////////////////////////////////////////////////////////////////////*/
+
+  "dialog_background_brewing": {
+    "type": "image",
+    "texture": "textures/uidx/brewing_stand/brewing_stand_panel",
+    "size": [ 176, 166 ]
+  },
+
+  "brewing_arrow_full_image": {
+    "type": "image",
+    "texture": "textures/uidx/brewing_stand/brewing_stand_arrow",
+    "size": [ 9, 28 ]
+  },
+
+  "brewing_fuel_bar_full_image": {
+    "type": "image",
+    "texture": "textures/uidx/brewing_stand/brewing_stand_fuel",
+    "size": [ 22, 4 ]
+  },
+
+  "bubbles_full_image": {
+    "type": "image",
+    "texture": "textures/uidx/brewing_stand/brewing_stand_bubbles",
+    "size": [ 12, 29 ]
+  },
+
+  /*///////////////////////////////////////////////////////////////////////////
+  //  Cartography Table.
+  ///////////////////////////////////////////////////////////////////////////*/
+
+  "dialog_background_cartography_table": {
+    "type": "image",
+    "texture": "textures/uidx/cartography_table/cartography_table_panel",
+    "size": [ 176, 240 ]
+  },
+
+  "cartography_table_text_edit_active": {
+    "type": "image",
+    "texture": "textures/uidx/cartography_table/cartography_table_text_edit_active",
+    "size": [ "100%", "100%" ]
+  },
+
+  "cartography_table_text_edit_inactive@ui_deluxe_textures.cartography_table_text_edit_active": {
+    "texture": "textures/uidx/cartography_table/cartography_table_text_edit_inactive"
+  },
+
+  "cartography_table_text_edit_active_hover@ui_deluxe_textures.cartography_table_text_edit_active": {
+    "texture": "textures/uidx/cartography_table/cartography_table_text_edit_active_hover"
+  },
+
+  /*///////////////////////////////////////////////////////////////////////////
+  //  Inventory.
+  ///////////////////////////////////////////////////////////////////////////*/
+
+  "dialog_background_inventory": {
+    "type": "image",
+    "texture": "textures/uidx/inventory/inventory_panel",
+    "size": [ 176, 166 ]
+  },
+
+  "dialog_background_crafting": {
+    "type": "image",
+    "texture": "textures/uidx/inventory/crafting_panel",
+    "size": [ 176, 166 ]
+  },
+  
+  /*///////////////////////////////////////////////////////////////////////////
+  //  Recipe Book.
+  ///////////////////////////////////////////////////////////////////////////*/
+
+  /* Dialog Background */
+  "recipe_book_tab_items": {
+    "type": "image",
+    "texture": "textures/uidx/inventory/recipe_book_panel",
+    "size": [ 148, 166 ]
+  },
+
+  "recipe_book_separator": {
+    "type": "image",
+    "texture": "textures/uidx/inventory/recipe_book_separator",
+    "size": [ 28, 166 ]
+  },
+
+  /*  Toggle */
+
+  "recipe_book_toggle": {
+    "type": "image",
+    "texture": "textures/uidx/inventory/recipe_book_toggle",
+    "size": [ 20, 18 ]
+  },
+
+  "recipe_book_toggle_hover": {
+    "type": "image",
+    "texture": "textures/uidx/inventory/recipe_book_toggle_hover",
+    "size": [ 20, 18 ]
+  },
+
+  /*  Tab Base */
+  "recipe_book_tab_image": {
+    "type": "image",
+    "size": [ 35, 26 ]
+  },
+
+  "recipe_book_tab_front@ui_deluxe_textures.recipe_book_tab_image": {
+    "texture": "textures/uidx/inventory/recipe_book_tab_front"
+  },
+
+  "recipe_book_tab_back@ui_deluxe_textures.recipe_book_tab_image": {
+    "texture": "textures/uidx/inventory/recipe_book_tab_back"
+  },
+
+  /* Filter Toggle */
+  "recipe_filter_toggle": {
+    "type": "image",
+    "size": [ 27, 16 ]
+  },
+
+  "craft_toggle_off@ui_deluxe_textures.recipe_filter_toggle": {
+    "texture": "textures/uidx/inventory/craft_toggle_off"
+  },
+
+  "craft_toggle_off_hover@ui_deluxe_textures.recipe_filter_toggle": {
+    "texture": "textures/uidx/inventory/craft_toggle_off_hover"
+  },
+
+  "craft_toggle_on@ui_deluxe_textures.recipe_filter_toggle": {
+    "texture": "textures/uidx/inventory/craft_toggle_on"
+  },
+
+  "craft_toggle_on_hover@ui_deluxe_textures.recipe_filter_toggle": {
+    "texture": "textures/uidx/inventory/craft_toggle_on_hover"
+  },
+  
+  /* Grid Buttons */
+  "recipe_book_grid_button": {
+    "type": "image",
+    "size": [ 18, 18 ]
+  },
+
+  "cell_image_recipe_default@ui_deluxe_textures.recipe_book_grid_button": {
+    "texture": "textures/uidx/inventory/cell_image_recipe_default"
+  },
+
+  "cell_image_recipe_creative@ui_deluxe_textures.recipe_book_grid_button": {
+    "texture": "textures/uidx/inventory/cell_image_recipe_creative"
+  },
+
+  "cell_image_recipe_group_head_collapsed@ui_deluxe_textures.recipe_book_grid_button": {
+    "texture": "textures/uidx/inventory/cell_image_recipe_group_head_collapsed"
+  },
+
+  "cell_image_recipe_group_head_expanded@ui_deluxe_textures.recipe_book_grid_button": {
+    "texture": "textures/uidx/inventory/cell_image_recipe_group_head_expanded"
+  },
+
+  "cell_image_recipe_group_item@ui_deluxe_textures.recipe_book_grid_button": {
+    "texture": "textures/uidx/inventory/cell_image_recipe_group_item"
+  },
+
+  "cell_image_recipe_selected@ui_deluxe_textures.recipe_book_grid_button": {
+    "texture": "textures/uidx/inventory/cell_image_recipe_selected"
+  },
+
+  "cell_image_recipe_selected_creative@ui_deluxe_textures.recipe_book_grid_button": {
+    "texture": "textures/uidx/inventory/cell_image_recipe_selected_creative"
+  },
+
+  "cell_image_recipe_default_red@ui_deluxe_textures.recipe_book_grid_button": {
+    "texture": "textures/uidx/inventory/cell_image_recipe_default_red"
+  },
+
+  /* Search box */
+
+  /* Survival */
+  "survival_recipe_book_search_box": {
+    "type": "image",
+    "texture": "textures/uidx/inventory/recipe_book_search_box_survival",
+    "size": [ 105, 16 ]
+  },
+
+  "survival_recipe_book_search_box_hover@ui_deluxe_textures.survival_recipe_book_search_box": {
+    "texture": "textures/uidx/inventory/recipe_book_search_box_survival_hover"
+  },
+
+  /* Survival Touch */
+  "survival_recipe_book_search_box_touch": {
+    "type": "image",
+    "texture": "textures/uidx/inventory/recipe_book_search_box_survival_touch",
+    "size": [ 87, 16 ]
+  },
+
+  "survival_recipe_book_search_box_hover_touch@ui_deluxe_textures.survival_recipe_book_search_box_touch": {
+    "texture": "textures/uidx/inventory/recipe_book_search_box_survival_touch_hover"
+  },
+
+  /* Creative */
+  "creative_recipe_book_search_box": {
+    "type": "image",
+    "texture": "textures/uidx/inventory/recipe_book_search_box_creative",
+    "size": [ 116, 16 ]
+  },
+
+  "creative_recipe_book_search_box_hover@ui_deluxe_textures.creative_recipe_book_search_box": {
+    "texture": "textures/uidx/inventory/recipe_book_search_box_creative_hover"
+  },
+
+  /* Scroll */
+
+  "creative_scroll_box": {
+    "type": "image",
+    "texture": "textures/uidx/inventory/creative_scroll_box",
+    "size": [ "100% +2px", "100% +2px" ]
+  },
+
+  "creative_scroll_track": {
+    "type": "image",
+    "texture": "textures/uidx/inventory/creative_scroll_track",
+    "size": [ 10, 111 ]
+  },
+
+  "recipe_book_scroll_track": {
+    "type": "image",
+    "texture": "textures/uidx/inventory/recipe_book_scroll_track",
+    "size": [ 10, 128 ]
+  },
+
+  /*///////////////////////////////////////////////////////////////////////////
+  //  Creative.
+  ///////////////////////////////////////////////////////////////////////////*/
+
+  /* Dialog Background */
+  "dialog_background_creative": {
+    "type": "image",
+    "texture": "textures/uidx/inventory/creative_panel",
+    "size": [ 176, 166 ]
+  },
+
+  "dialog_background_creative_inventory": {
+    "type": "image",
+    "texture": "textures/uidx/inventory/creative_inventory_panel",
+    "size": [ 176, 166 ]
+  },
+
+  "dialog_background_creative_touch": {
+    "type": "image",
+    "texture": "textures/uidx/inventory/creative_panel_touch",
+    "size": [ 176, 166 ]
+  },
+
+  /*  Tab Base */
+  "creative_tab_image": {
+    "type": "image",
+    "size": [ 24, 25 ]
+  },
+
+  /*  Left */
+  "creative_tab_front_left@ui_deluxe_textures.creative_tab_image": {
+    "texture": "textures/uidx/inventory/creative_tab_front_left"
+  },
+
+  "creative_tab_back_left@ui_deluxe_textures.creative_tab_image": {
+    "texture": "textures/uidx/inventory/creative_tab_back_left"
+  },
+
+  /*  Middle */
+  "creative_tab_front_middle@ui_deluxe_textures.creative_tab_image": {
+    "texture": "textures/uidx/inventory/creative_tab_front_middle"
+  },
+
+  "creative_tab_back_middle@ui_deluxe_textures.creative_tab_image": {
+    "texture": "textures/uidx/inventory/creative_tab_back_middle"
+  },
+
+  /*  Middle */
+  "creative_tab_front_right@ui_deluxe_textures.creative_tab_image": {
+    "texture": "textures/uidx/inventory/creative_tab_front_right"
+  },
+
+  "creative_tab_back_right@ui_deluxe_textures.creative_tab_image": {
+    "texture": "textures/uidx/inventory/creative_tab_back_right"
+  },
+
+  /*  Search Box */
+  
+  "creative_search_box": {
+    "type": "image",
+    "texture": "textures/uidx/inventory/creative_search_box"
+  },
+
+  "creative_search_box_hover@ui_deluxe_textures.creative_search_box": {
+    "texture": "textures/uidx/inventory/creative_search_box_hover"
+  }
+}

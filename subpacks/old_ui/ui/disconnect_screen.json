@@ -1,0 +1,19 @@
+{
+  "disconnect_screen": {
+    "$screen_content": "disconnect_deluxe.disconnect_screen_content",
+    "$button_layout": "@disconnect_deluxe.button_panel",
+    "$screen_bg_content": "common_java.options_background"
+  },
+
+  "realms_disconnect_screen": {
+    "$screen_content": "disconnect_deluxe.disconnect_screen_content",
+    "$button_layout": "@disconnect_deluxe.realms_disconnect_button_panel",
+    "$screen_bg_content": "common_java.portal_background"
+  },
+
+  "realms_warning_screen": {
+    "$screen_content": "disconnect_deluxe.disconnect_screen_content",
+    "$button_layout": "@disconnect_deluxe.realms_warning_button_panel",
+    "$screen_bg_content": "common_java.portal_background"
+  }
+}

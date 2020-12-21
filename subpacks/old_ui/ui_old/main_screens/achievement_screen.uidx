@@ -1,0 +1,103 @@
+{
+  "namespace": "achievement_old",
+
+  "main_content_panel": {
+    "type": "panel",
+    "size": [ "100% - 10px", "100% - 10px" ],
+    "anchor_from": "center",
+    "anchor_to": "center",
+    "controls": [
+      {
+        "loading_achievement_panel@achievement.main_banner": {
+          "anchor_to": "top_middle",
+          "anchor_from": "top_middle",
+          "size": [ "100%", 58 ],
+          "controls": [
+            {
+              "loading_achievement_label@play.loading_label": {
+                "$message_binding_name": "#achievement_loading_display_message"
+              }
+            },
+            {
+              "progress_loading_bars@play.progress_loading_bars": {
+                "offset": [ 0, 0 ],
+                "anchor_from": "center",
+                "anchor_to": "center",
+                "$visible_binding_name": "#loading_achievement_data"
+              }
+            }
+          ],
+          "bindings": [
+            {
+              "binding_name": "#loading_achievement_panel_visible",
+              "binding_name_override": "#visible"
+            }
+          ]
+        }
+      },
+      {
+        "scrolling_panel@common.scrolling_panel": {
+          "anchor_from": "center",
+          "anchor_to": "center",
+          "$show_background": false,
+          "size": [ "100%", "100%" ],
+          "$scrolling_content": "achievement.inside_header_panel",
+          "$scroll_size": [ 12, "100%" ],
+          "$scroll_track_image_control": "ui_old_textures.scroll_track",
+          "$scroll_box_mouse_image_control": "ui_old_textures.scroll_box",
+          "bindings": [
+            {
+              "binding_name": "(not #loading_achievement_panel_visible)",
+              "binding_name_override": "#visible"
+            }
+          ]
+        }
+      }
+    ]
+  },
+
+  "top_bar": {
+    "type": "panel",
+    "controls": [
+      {
+        "back_button@common_old.back_button": {
+          "anchor_from": "top_left",
+          "anchor_to": "top_left",
+          "offset": [ 4, 4 ]
+        }
+      },
+      {
+        "title_text@play_old.base_label": {
+          "anchor_from": "center",
+          "anchor_to": "center",
+          "text": "gui.achievements"
+        }
+      }
+    ]
+  },
+
+  "panel_cotent": {
+    "type": "panel",
+    "controls": [
+      { "main_content_pane@achievement_old.main_content_panel": {} }
+    ]
+  },
+
+  "main_screen_panel@ui_template_old.main_screen_panel": {
+    "$top_bar_panel": "achievement_old.top_bar",
+    "$panel_cotent": "achievement_old.panel_cotent"
+  },
+  
+  /*///////////////////////////////////////////////////////////////////////////
+  //  Screen.
+  ///////////////////////////////////////////////////////////////////////////*/
+
+  "achievement_screen_content": {
+    "type": "panel",
+    "controls": [
+      {
+        "main_control@achievement_old.main_screen_panel": { }
+      }
+    ]
+  }
+}

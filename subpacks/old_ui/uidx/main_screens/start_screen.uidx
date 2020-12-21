@@ -1,0 +1,334 @@
+{
+  "namespace": "start_deluxe",
+
+  "copyright@start.copyright": {
+    "anchor_from": "top_left",
+    "anchor_to": "top_left",
+    "shadow": true
+  },
+
+  "development_version@start.development_version": {
+    "shadow": true
+  },
+
+  "version@start.version": {
+    "anchor_from": "top_right",
+    "anchor_to": "top_right",
+    "shadow": true
+  },
+
+  "title_label": {
+    "type": "label",
+    "shadow": true,
+    "color": "$main_header_text_color",
+    "layer": 2,
+    "text": "Minecraft",
+    "size": [ "default", 9 ],
+    "max_size": [ "100%", "100%" ],
+    "anchor_from": "top_left",
+    "anchor_to": "top_left"
+  },
+
+  "version_panel":{
+    "type": "stack_panel",
+    "size": [ "100%", 9 ],
+    "orientation": "horizontal",
+    "anchor_from": "top_left",
+    "anchor_to": "top_left",
+    "controls": [
+      { "title_label@start_deluxe.title_label": { } },
+      {
+        "separator": {
+          "type": "panel",
+          "size": [ 5, 9 ]
+        }
+      },
+      { "version@start_deluxe.version": { } }
+    ]
+  },
+
+  "text_panel": {
+    "type": "panel",
+    "size": [ "100%-4px", 9 ],
+    "offset": [ 0, -2 ],
+    "anchor_from": "bottom_middle",
+    "anchor_to": "bottom_middle",
+    "controls": [
+      {
+        "copyright@start_deluxe.copyright": { }
+      },
+      {
+        "version@start_deluxe.version": { }
+      }
+    ]
+  },
+
+  /*///////////////////////////////////////////////////////////////////////////
+  //  Skins Panel.
+  ///////////////////////////////////////////////////////////////////////////*/
+
+  "skin_panel": {
+    "type": "panel",
+    "anchor_from": "right_middle",
+    "anchor_to": "top_right",
+    "size": [ "50% - 50px", 80 ],
+    "offset": [ 0, "-5% +26px" ],
+    "controls": [
+      { "viewer_panel@start.skin_viewer_panel": { "size": [ "100%", "100% +10px" ] } }
+    ]
+  },
+
+  /*///////////////////////////////////////////////////////////////////////////
+  //  Online Buttons Panel (and the lang button).
+  ///////////////////////////////////////////////////////////////////////////*/
+
+  "online_buttons_panel@start.online_buttons_panel": {
+    "size": [ "50% - 112.5px", 32 ]
+  },
+
+  /*///////////////////////////////////////////////////////////////////////////
+  //  Main Buttons Panel.
+  ///////////////////////////////////////////////////////////////////////////*/
+
+  "main_button@common_buttons_dx.main_button": {
+    "anchor_from": "top_left",
+    "anchor_to": "top_left",
+    "size": [ 100, 20 ]
+  },
+
+  "play_button@start_deluxe.main_button": {
+    "$pressed_button_name": "button.menu_play",
+    "$button_text": "menu.play"
+  },
+
+  "quick_play_button@start_deluxe.main_button": {
+    "$pressed_button_name": "button.menu_quick_play",
+    "$button_text": "menu.quickplay"
+  },
+
+  "achievements_button@start_deluxe.main_button": {
+    "$pressed_button_name": "button.menu_achievements",
+    "$button_text": "menu.achievements"
+  },
+
+  "profile_button@start_deluxe.main_button": {
+    "anchor_from": "top_right",
+    "anchor_to": "top_right",
+    "$pressed_button_name": "button.to_profile_screen",
+    "$button_text": "profileScreen.header",
+    "size": [ 49, 20 ]
+  },
+
+  "settings_button@start_deluxe.main_button": {
+    "$pressed_button_name": "button.menu_settings",
+    "$button_text": "menu.options",
+    "size": [ 49, 20 ]
+  },
+
+  "skin_button@start_deluxe.main_button": {
+    "$pressed_button_name": "button.menu_skins",
+    "$button_text": "menu.skins",
+    "size": [ 49, 20 ]
+  },
+
+  "buy_game_button@start_deluxe.main_button": {
+    "$pressed_button_name": "button.menu_buy_game",
+    "$button_text": "trial.pauseScreen.buyGame"
+  },
+
+  "exit_button@start_deluxe.main_button": {
+    "$pressed_button_name": "button.menu_exit",
+    "$button_text": "gui.exit",
+    "size": [ 49, 20 ]
+  },
+
+  "feedback_icon": {
+    "type": "image",
+    "texture": "textures/uidx/feedback",
+    "size": [ 16, 16 ]
+  },
+  
+  "feedback_button@start_deluxe.main_button": {
+    "size": [ 24, 24 ],
+    "$pressed_button_name": "button.menu_open_uri",
+    "$button_panel_content": "start_deluxe.feedback_icon",
+    "anchor_from": "bottom_left",
+    "anchor_to": "bottom_left",
+    "offset": [ 21, -24 ],
+    "property_bag": {
+      "#hyperlink": "https://aka.ms/minecraftfb"
+    }
+  },
+
+  "store_icon": {
+    "type": "image",
+    "texture": "textures/uidx/store",
+    "size": [ 16, 16 ]
+  },
+
+  "store_button@start_deluxe.main_button": {
+    "size": [ 24, 24 ],
+    "$pressed_button_name": "button.menu_store",
+    "$button_panel_content": "start_deluxe.store_icon",
+    "anchor_from": "bottom_right",
+    "anchor_to": "bottom_right",
+    "offset": [ -21, -24 ]
+  },
+
+  "stacked_row": {
+    "type": "panel",
+    "size": [ 100, 22 ]
+  },
+
+  "main_buttons": {
+    "type": "stack_panel",
+    "anchor_from": "center",
+    "anchor_to": "top_middle",
+    "offset": [ 0, "-5%" ],
+    "size": [ 100, "100%-108px" ],
+    "controls": [
+      { "button_0@start_deluxe.stacked_row": { "controls": [ { "play_button@start_deluxe.play_button": { } } ] } },
+      { "button_1@start_deluxe.stacked_row": { "controls": [ { "achievements_button@start_deluxe.achievements_button": { } } ] } },
+      { "button_1@start_deluxe.stacked_row": { "controls": [ { "settings_button@start_deluxe.settings_button": { } }, { "profile_button@start_deluxe.profile_button": { } } ] } },
+      { "fill_1@start_deluxe.stacked_row": { "size": [ "100%", "fill" ], "controls": [ { "gamepad_helpers@start.gamepad_helpers": {} } ] } }
+    ]
+  },
+
+  "main_buttons_panel": {
+    "type": "stack_panel",
+    "size": [ 100, 64 ],
+    "offset": [ 0, "-5%" ],
+    "anchor_from": "center",
+    "anchor_to": "top_middle",
+    "controls": [
+      {
+        "stacked_row_0@start_deluxe.stacked_row": {
+          "controls": [
+            { "play_button@start_deluxe.play_button": { } }
+          ]
+        }
+      },
+      {
+        "stacked_rows": {
+          "type": "stack_panel",
+          "size": [ 100, "100%c" ],
+          "anchor_from": "top_middle",
+          "anchor_to": "top_middle",
+          "controls": [
+            {
+              "stacked_row_1@start_deluxe.stacked_row": {
+                "controls": [
+                  { "profile_button@start_deluxe.profile_button": { } }
+                ]
+              }
+            },
+            {
+              "stacked_row_3@start_deluxe.stacked_row": {
+                "controls": [
+                  {
+                    "stacked_columns": {
+                      "type": "stack_panel",
+                      "size": [ 100, 20 ],
+                      "orientation": "horizontal",
+                      "controls": [
+                        {
+                          "stacked_col_0": {
+                            "type": "panel",
+                            "size": [ 49, 20 ],
+                            "controls": [
+                              { "settings_button@start_deluxe.settings_button": { } }
+                            ]
+                          }
+                        },
+                        {
+                          "stacked_col_separator": {
+                            "type": "panel",
+                            "size": [ 2, 0 ]
+                          }
+                        },
+                        {
+                          "stacked_col_1": {
+                            "type": "panel",
+                            "size": [ 49, 20 ],
+                            "controls": [
+                              { "exit_button@start_deluxe.exit_button": { } }
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  }
+                ]
+              }
+            },
+            {
+              "stacked_row_4@start_deluxe.stacked_row": {
+                "controls": [
+                  { "buy_game_button@start_deluxe.buy_game_button": {} }
+                ],
+                "bindings": [
+                  {
+                    "binding_name": "#trial_game_mode",
+                    "binding_name_override": "#visible"
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      }
+    ]
+  },
+
+  "gamepad_helpers@start.gamepad_helpers": {
+    "offset": [ 0, "40%" ],
+    "size": [ "100%c", 26 ]
+  },
+
+  /*///////////////////////////////////////////////////////////////////////////
+  //  Screens.
+  ///////////////////////////////////////////////////////////////////////////*/
+
+  "title_panel_win10": {
+    "type": "panel",
+    "offset":  [0, "10%"],
+    "anchor_from": "top_middle",
+    "anchor_to": "top_middle",
+    "size": [ "55%", "18.85%x" ],
+    "controls": [
+      { 
+        "title_image": {
+          "type": "image",
+          "anchor_from": "top_middle",
+          "anchor_to": "top_middle",
+          "layer": 1,
+          "uv_size": [ 1936, 375 ],
+          "texture": "textures/uidx/titleOriginal.png"
+        }
+      },
+      {
+        "splash_text@common_art.splash_text": {
+          "offset": [ -8, 10 ]
+        }
+      }
+    ]
+  },
+
+  "start_screen_content@start.start_screen_content": {
+    "controls": [
+      { "title_panel_content@start_deluxe.title_panel_win10": { } },
+      { "skin_panel@start_deluxe.skin_panel": { "layer": 1 } },
+      { "main_buttons@start_deluxe.main_buttons": { } },
+      { "feedback_button@start_deluxe.feedback_button": { } },
+      { "store_button@start_deluxe.store_button": { } },
+      { "text_panel@start_deluxe.text_panel": { } },
+      {
+        "realms_pending_invite_panel@start.realms_pending_invite_panel": {
+          "offset": [ 0, 9 ],
+          "anchor_from": "top_left",
+          "anchor_to": "top_left"
+        }
+      }
+    ]
+  }
+}

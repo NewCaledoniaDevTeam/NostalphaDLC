@@ -1,0 +1,9 @@
+{
+  "skin_picker_screen": {
+    "$screen_content": "skin_picker_old.skin_picker_screen_content",
+    "$screen_bg_content": "common_old.screen_background",
+    "$header_safezone_control": "common_dx.null_panel",
+    "$header_bar_control": "common_dx.null_panel",
+    "$is_full_screen_layout": false
+  }
+}

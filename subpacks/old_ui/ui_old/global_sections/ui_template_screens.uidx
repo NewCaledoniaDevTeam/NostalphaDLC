@@ -1,0 +1,38 @@
+{
+  "namespace": "ui_template_old",
+
+  "main_screen_panel": {
+    "type": "panel",
+    "$top_bar_panel|default": "",
+    "$panel_cotent|default": "",
+    "$panel_cotent_size|default": [ "100% -14px", "100% -32px" ],
+    "$panel_cotent_top_offset|default": [ 0, 29 ],
+    "controls": [
+      {
+        "top_bar@ui_template_old.top_bar": {}
+      },
+      {
+        "panel_cotent@ui_template_old.panel_cotent": {}
+      }
+    ]
+  },
+
+  "top_bar@ui_old_textures.top_bar": {
+    "anchor_from": "top_middle",
+    "anchor_to": "top_middle",
+    "size": [ "100%", 28 ],
+    "controls": [
+      { "top_bar_panel@$top_bar_panel": {} }
+    ]
+  },
+
+  "panel_cotent@ui_old_textures.dialog_background": {
+    "anchor_from": "top_middle",
+    "anchor_to": "top_middle",
+    "offset": "$panel_cotent_top_offset",
+    "size": "$panel_cotent_size",
+    "controls": [
+      { "panel_cotent@$panel_cotent": { } }
+    ]
+  }
+}

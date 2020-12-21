@@ -1,0 +1,5 @@
+{
+  "chat_screen": {
+    "$screen_content": "chat_old.chat_screen_content"
+  }
+}

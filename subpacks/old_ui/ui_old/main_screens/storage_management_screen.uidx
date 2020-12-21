@@ -1,0 +1,87 @@
+{
+  "namespace": "storage_management_old",
+
+  "main_content_panel": {
+    "type": "stack_panel",
+    "orientation": "vertical",
+    "anchor_from": "bottom_left",
+    "anchor_to": "bottom_left",
+    "size": [ "100% -16px", "100% -29px" ],
+    "offset": [ 10, -7 ],
+    "controls": [
+      { "storage_header_panel@storage_management.storage_header_panel": { "layer": 2 } },
+      {
+        "scroll_panel@global_resources_old.scrolling_panel": {
+          "size": [ "100%", "fill" ],
+          "$scrolling_content": "storage_management.storage_main_panel",
+          "layer": 2
+        }
+      },
+      { "storage_footer_panel@storage_management.storage_footer_panel": { "layer": 2 } }
+    ]
+  },
+
+  "main_screen_panel": {
+    "type": "panel",
+    "size": "$panel_size",
+    "$title_text|default": "menu.storageManagement",
+    "$dialog_background": "common.dialog_background_hollow_3",
+    "$close_button": "global_resources_old.back_button",
+    "bindings": [
+      {
+        "binding_type": "view",
+        "source_control_name": "storage_management_button_toggle",
+        "source_property_name": "#toggle_state",
+        "target_property_name": "#visible"
+      }
+    ],
+    "controls": [
+      { "common_panel@common.dialog_background_hollow_3": { "layer": 1 } },
+      { "main_content_panel@storage_management_old.main_content_panel": { "layer": 2 } },
+      {
+        "title": {
+          "type": "label",
+          "offset": [ 0, 7 ],
+          "anchor_from": "top_middle",
+          "anchor_to": "top_middle",
+          "text": "$title_text",
+          "color": "$title_text_color",
+          "layer": 4
+        }
+      },
+      {
+        "close_panel": {
+          "type": "panel",
+          "size": "$close_panel_size",
+          "anchor_from": "top_right",
+          "anchor_to": "top_right",
+          "$close_panel_size|default": [ 12, 12 ],
+          "$close_button|default": "",
+          "offset": [ -5, 5 ],
+          "controls": [
+            {
+              "close_button_x@ui_old_textures.close_button_x": {
+                "layer": 14
+              }
+            },
+            {
+              "back_button@$close_button": {
+                "layer": 4
+              }
+            }
+          ]
+        }
+      }
+    ],
+    "variables": [
+      {
+        "requires": "$desktop_screen",
+        "$panel_size": [ 372, 218 ]
+      },
+      {
+        "requires": "$pocket_screen",
+        "$panel_size": [ 372, "100%" ]
+      }
+    ]
+  },
+}

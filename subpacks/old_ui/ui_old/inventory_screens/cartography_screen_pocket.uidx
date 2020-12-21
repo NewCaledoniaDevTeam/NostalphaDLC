@@ -1,0 +1,474 @@
+{
+  "namespace": "cartography_pocket_old",
+
+  "left_tab@common_toggles_dx.toggle_panel": {
+    "$unchecked_control": "ui_old_textures.TabLeftBack",
+    "$checked_control": "ui_old_textures.TabLeftFront",
+    "$unchecked_hover_control": "ui_old_textures.TabLeftBack",
+    "$checked_hover_control": "ui_old_textures.TabLeftFront",
+
+    "$toggle_focus_enabled": false,
+    "$toggle_name": "left_navigation_tab",
+    "$tab_content": "crafting_pocket.empty_tab_panel"
+  },
+
+  "left_tab_inventory@cartography_pocket_old.left_tab": {
+    "$tab_view_binding_name": "inventory_left_tab_toggle",
+    "$tab_icon": "cartography_pocket.chest_item_renderer",
+    "$toggle_group_forced_index": "$left_tab_index_inventory",
+
+    "$toggle_binding_type": "global",
+    "$toggle_state_binding_name": "#is_left_tab_inventory"
+  },
+
+  "right_tab_cartography@ui_old_textures.TabRightFront": {
+    "size": [ 30, 28 ],
+    "controls": [
+      { "default@cartography_pocket.cartography_item_renderer": { "layer": 8 } }
+    ]
+  },
+
+  "tab_navigation_panel_layout": {
+    "type": "panel",
+    "layer": 4,
+    "size": [ "100%+52px", "100%" ],
+    "anchor_from": "top_middle",
+    "anchor_to": "top_middle",
+    "controls": [
+      {
+        "left_navigation_tabs": {
+          "type": "panel",
+          "size": [ 30, "100%" ],
+          "anchor_to": "top_left",
+          "anchor_from": "top_left",
+          "controls": [
+            {
+              "content": {
+                "type": "stack_panel",
+                "size": [ "100%", "100%" ],
+                "anchor_to": "top_left",
+                "anchor_from": "top_left",
+                "controls": [
+                  {
+                    "close_tab@ui_old_textures.TabLeftFrontTopMost": {
+                      "size": [ 30, 28 ],
+                      "controls": [
+                        { 
+                          "default@common_old.close_button": {
+                            "anchor_to": "top_left",
+                            "anchor_from": "top_left",
+                            "offset": [ 5, 6 ]
+                          }   
+                        }
+                      ]
+                    } 
+									},
+                  { "fill_panel_0": { "type": "panel", "size": [ 1, "fill" ] } },
+                  { "left_tab_inventory@cartography_pocket_old.left_tab_inventory": { "size": [ 30, 28 ] } },
+									{ "fill_panel_5": { "type": "panel", "size": [ 1, 2 ] } }
+                ]
+              }
+            }
+          ]
+        }
+      },
+      {
+        "right_navigation_tabs": {
+          "type": "panel",
+          "size": [ 30, "100%" ],
+          "anchor_to": "top_right",
+          "anchor_from": "top_right",
+          "controls": [
+            {
+              "content": {
+                "type": "stack_panel",
+                "size": [ "100%", "100%" ],
+                "anchor_to": "top_right",
+                "anchor_from": "top_right",
+                "controls": [
+                  { "fill_panel_0": { "type": "panel", "size": [ 1, "fill" ] } },
+									{ "right_tab_cartography@cartography_pocket_old.right_tab_cartography": { "size": [ 30, 28 ] } },
+                  { "fill_panel_3": { "type": "panel", "size": [ 1, 2 ] } }
+                ]
+              }
+            }
+          ]
+        }
+      }
+    ]
+  },
+
+  /*///////////////////////////////////////////////////////////////////////////
+  //  Item Slots
+  ///////////////////////////////////////////////////////////////////////////*/
+
+  "input_item_slot@container_item_old.container_item_32": {
+    "size": [ 32, 32 ],
+    "anchor_from": "center",
+    "anchor_to": "center",
+    "$item_collection_name": "cartography_input_items"
+  },
+
+  "additional_item_slot@container_item_old.container_item_32": {
+    "size": [ 32, 32 ],
+    "anchor_from": "center",
+    "anchor_to": "center",
+    "$item_collection_name": "cartography_additional_items"
+  },
+
+  "result_item_slot@container_item_old.container_item_32": {
+    "size": [ 32, 32 ],
+    "anchor_from": "center",
+    "anchor_to": "center",
+    "$item_collection_name": "cartography_result_items",
+    "$focus_override_up_binding_type": "none",
+    "$focus_override_up": "cartography_input",
+    "$button_ref": "cartography.cartography_output_slot_button"
+  },
+
+  "text_box_panel": {
+    "type": "stack_panel",
+    "offset": [ 4, 0 ],
+    "controls": [
+      {
+        "map_name_label": {
+          "type": "label",
+          "text": "map.name",
+          "shadow": true,
+          "color": "$main_menu_button_default_color"
+        }
+      },
+      {
+        "text_edit_control@cartography.text_edit_control": {
+          "$text_background_default": "ui_old_textures.text_input",
+          "$text_background_hover": "ui_old_textures.text_input_hover",
+          "size": [ "100%-4px", 18 ]
+        }
+      }
+    ]
+  },
+
+  /*///////////////////////////////////////////////////////////////////////////
+  //  Cartography Content Stack Panel
+  ///////////////////////////////////////////////////////////////////////////*/
+  
+  "input_slots": {
+    "type": "stack_panel",
+    "size": [ "default", 28 ],
+    "orientation": "horizontal",
+    "controls": [
+      {
+        "input_item_slot@cartography_pocket_old.input_item_slot": {
+          "anchor_from": "top_middle",
+          "anchor_to": "top_middle",
+          "offset": [ 0, 1 ],
+          "$item_collection_name": "cartography_input_items",
+
+          "$focus_id_binding_type": "none",
+          "$focus_id": "cartography_input",
+
+          "$focus_override_down_binding_type": "none",
+          "$focus_override_down": "cartography_result",
+
+          "$focus_override_right_binding_type": "none",
+          "$focus_override_right": "cartography_additional"
+        }
+      },
+      {
+        "plus_centerer": {
+          "type": "panel",
+          "size": [ "100%c+14px", "100%" ],
+          "controls": [
+            {
+              "plus_sign_icon@cartography.plus_sign_icon": {
+                "texture": "textures/ui_old/plus"
+              }
+            }
+          ]
+        }
+      },
+      {
+        "additional_item_slot@cartography_pocket_old.additional_item_slot": {
+          "anchor_from": "bottom_middle",
+          "anchor_to": "bottom_middle",
+          "offset": [ 0, -1 ],
+          "$item_collection_name": "cartography_additional_items",
+
+          "$focus_id_binding_type": "none",
+          "$focus_id": "cartography_additional",
+
+          "$focus_override_left_binding_type": "none",
+          "$focus_override_left": "cartography_input",
+
+          "$focus_override_down_binding_type": "none",
+          "$focus_override_down": "cartography_result"
+        }
+      }
+    ]
+  },
+
+  "cartography_content_stack_panel": {
+    "type": "stack_panel",
+    "orientation": "vertical",
+    "size": [ "100% - 12px", "100% - 8px" ],
+    "controls": [
+      {
+        "label_holder": {
+          "type": "panel",
+          "size": [ "100%", "100%c" ],
+          "controls": [
+            { 
+              "cartography_label@cartography.title_label": {
+                "shadow": true,
+                "color": "$main_menu_button_default_color"
+              }
+            }
+          ]
+        }
+      },
+      {
+        "padding_1": {
+          "type": "panel",
+          "size": [ 0, 2 ]
+        }
+      },
+      {
+        "panel": {
+          "type": "panel",
+          "size": [ "100%", 28 ],
+          "controls": [
+            {
+              "input_slots@cartography_pocket_old.input_slots": {
+              }
+            }
+          ]
+        }
+      },
+      {
+        "padding_2": {
+          "type": "panel",
+          "size": [ 0, 4 ]
+        }
+      },
+      {
+        "map_centerer": {
+          "type": "panel",
+          "size": [ "100%", "fill" ],
+          "max_size": [ "100%", 66 ],
+
+          "controls": [
+            {
+              "map_image_panel@cartography.map_image_panel": {
+                "shadow": true,
+                "color": "$main_menu_button_default_color",
+                "size": [ "100%y", "100%" ],
+                "max_size": [ 66, 66 ]
+              }
+            }
+          ]
+        }
+      },
+      {
+        "description_centerer": {
+          "type": "panel",
+          "size": [ "100%", "100%c" ],
+          "controls": [
+            {
+              "output_description_label@cartography.output_description_label": {
+                "shadow": true,
+                "color": "$main_menu_button_default_color",
+                "anchor_from": "bottom_middle",
+                "anchor_to": "bottom_middle",
+                "offset": [ 0, 2 ]
+              }
+            }
+          ]
+        }
+      },
+      {
+        "padding_3": {
+          "type": "panel",
+          "size": [ 0, 2 ]
+        }
+      },
+      {
+        "arrow_centerer": {
+          "type": "panel",
+          "size": [ "100%", "100%c" ],
+          "controls": [
+            {
+              "vertical_arrow_icon@cartography_pocket.vertical_arrow_icon": {
+                "texture": "textures/ui_old/arrow_down_large",
+                "size": [ 15, 22 ]
+              }
+            }
+          ]
+        }
+      },
+      {
+        "padding_4": {
+          "type": "panel",
+          "size": [ 0, 1 ]
+        }
+      },
+      {
+        "result_centerer": {
+          "type": "panel",
+          "size": [ "100%", "100%c" ],
+          "controls": [
+            {
+              "result_item_slot@cartography_pocket_old.result_item_slot": {
+              }
+            }
+          ]
+        }
+      },
+      {
+        "filling_panel": {
+          "type": "panel",
+          "size": [ "100%", 4 ]
+        }
+      },
+      {
+        "text_box_centerer": {
+          "type": "panel",
+          "size": [ "100%", "100%c" ],
+          "controls": [
+            { "text_box_panel@cartography_pocket_old.text_box_panel": { } }
+          ]
+        }
+      }
+    ]
+  },
+
+  /*///////////////////////////////////////////////////////////////////////////
+  //  Content
+  ///////////////////////////////////////////////////////////////////////////*/
+
+  "scroll_panel_pocket@crafting.scroll_panel": {
+    "$scrolling_grid_item_size": [ 24, 24 ],
+    "$item_renderer_panel_size": [ 21, 21 ],
+    "$item_renderer_size": [ 16, 16 ],
+    "$item_renderer_offset": [ 0, 0 ],
+    "$cell_image_size": [ 24, 24 ],
+
+    "$scroll_background_image_control": "ui_old_textures.scroll_panel",
+
+    "$scroll_size": [ 12, "100%" ],
+    "$scroll_track_image_control": "ui_old_textures.scroll_track",
+    "$scroll_box_mouse_image_control": "ui_old_textures.scroll_box",
+
+    "$scroll_view_port_offset": [ 6, 4 ],
+    "$scroll_view_port_offset_touch": [ 6, 4 ],
+    "$scroll_view_port_size": [ "100%-12px", "100%-8px" ],
+    "$scroll_view_port_size_touch": [ "100%-12px", "100%-8px" ]
+  },
+
+  "pocket_container_grid@container_item_old.container_grid": {
+    "$grid_item_template": "container_item_old.container_item_pocket"
+  },
+
+  "inventory_scroll_panel@cartography_pocket_old.scroll_panel_pocket": {
+    "$scrolling_content": "cartography_pocket_old.pocket_container_grid"
+  },
+
+  "left_panel": {
+    "type": "input_panel",
+    "layer": 2,
+    "$is_loom_screen": true,
+    "controls": [
+      {
+        "inventory_scroll_panel@inventory_pocket_old.tab_content": {
+          "$scrolling_pane_control": "cartography_pocket_old.inventory_scroll_panel",
+          "size": [ "100%", "100%" ]
+        }
+      }
+    ]
+  },
+
+  "right_panel": {
+    "type": "panel",
+    "layer": 2,
+    "controls": [
+      { "cartography_content_stack_panel@cartography_pocket_old.cartography_content_stack_panel": { "size": [ "100%", "100%" ] } }
+    ]
+  },
+  
+  "both_panels": {
+    "type": "stack_panel",
+    "size": [ "100%-10px", "100%-8px" ],
+    "orientation": "horizontal",
+    "controls": [
+      {
+        "left_panel@cartography_pocket_old.left_panel": {
+          "size": [ "fill", "100%" ]
+        }
+      },
+      {
+        "right_panel@cartography_pocket_old.right_panel": {
+          "size": [ "47%", "100%" ]
+        }
+      }
+    ]
+  },
+
+  /*///////////////////////////////////////////////////////////////////////////
+  //  Panels
+  ///////////////////////////////////////////////////////////////////////////*/
+
+  "panels@ui_old_textures.dialog_background": {
+    "size": [ "100% - 64px", "100% - 26px" ],
+    "anchor_from": "top_middle",
+    "anchor_to": "top_middle",
+    "offset": [ 0, 3 ],
+    "controls": [
+      { "tab_navigation_panel@cartography_pocket_old.tab_navigation_panel_layout": { } },
+      { "both_panels@cartography_pocket_old.both_panels": { } }
+    ]
+  },
+
+  /*///////////////////////////////////////////////////////////////////////////
+  //  Screen.
+  ///////////////////////////////////////////////////////////////////////////*/
+
+  "cartography_panel": {
+    "type": "panel",
+    "controls": [
+      {
+        "container_gamepad_helpers@common.container_gamepad_helpers": {
+          "size": [ "100%", 40 ],
+          "$gamepad_helper_size": [ "100%c", 15 ],
+          "$a_b_stack_panel_orientation": "vertical",
+          "$x_y_stack_panel_orientation": "vertical",
+          "$a_b_stack_panel_size": [ "100%cm", "100%" ],
+          "$x_y_stack_panel_size": [ "100%cm", "100%" ]
+        }
+      },
+      {
+        "flying_item_renderer@common.flying_item_renderer": {
+          "layer": 14
+        }
+      },
+      {
+        "selected_item_details_factory@common.selected_item_details_factory": {
+          "$offset": [ 0, "-37px" ]
+        }
+      },
+      {
+        "root_panel@common.root_panel": {
+          "layer": 1,
+          "size": [ "100%", "100%" ],
+          "anchor_from": "bottom_middle",
+          "anchor_to": "bottom_middle",
+          "controls": [
+            { "inventory_selected_icon_button@common_dx.inventory_selected_icon_button": {} },
+            { "gamepad_cursor@common.gamepad_cursor_button": {} },
+            { "hold_icon@common.inventory_take_progress_icon_button": {} },
+            { "panels@cartography_pocket_old.panels": {} },
+            { "hotbar_panel@inventory_pocket_old.hotbar_panel": { } }
+          ]
+        }
+      }
+    ]
+  }
+}

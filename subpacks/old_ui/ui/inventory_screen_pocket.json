@@ -1,0 +1,15 @@
+{
+  "crafting_screen_pocket": {
+    "$screen_content": "inventory_pocket_old.recipe_crafting_screen_content_pocket",
+    "$is_crafting": true,
+    "$screen_bg_content": "common.screen_background",
+    "$top_half_variant": "inventory_pocket_old.crafting_panel_3x3"
+  },
+
+  "inventory_screen_pocket": {
+    "$screen_content": "inventory_pocket_old.recipe_inventory_screen_content_pocket",
+    "$is_crafting": false,
+    "$screen_bg_content": "common.screen_background",
+    "$top_half_variant": "inventory_pocket_old.crafting_panel_2x2"
+  }
+}

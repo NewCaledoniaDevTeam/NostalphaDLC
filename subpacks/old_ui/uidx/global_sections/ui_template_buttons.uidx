@@ -1,0 +1,96 @@
+{
+  "namespace": "common_buttons_dx",
+
+  /*//// Main Button ////*/
+  
+  "main_button@common.button": {
+    "locked_control": "locked",
+    "size": [ 200, 20 ],
+    "consume_hover_events": false,
+    "$button_text|default": "",
+    "$button_text": "",
+    "$button_panel_content|default": "common_buttons_dx.button_label",
+    "controls": [
+      { "default@common_buttons_dx.default": { } },
+      { "hover@common_buttons_dx.hover": { } },
+      { "pressed@common_buttons_dx.pressed": { } },
+      { "locked@common_buttons_dx.locked": { } }
+    ]
+  },
+
+  "default": {
+    "type": "image",
+    "texture": "textures/uidx/menu_button_default",
+    "$text_color": "$main_menu_button_default_color",
+    "controls": [
+      { "button_content@$button_panel_content": { "layer": 2 } }
+    ]
+  },
+
+  "hover@common_buttons_dx.default": {
+    "texture": "textures/uidx/menu_button_hover",
+    "$text_color": "$main_menu_button_hover_color"
+  },
+
+  "pressed@common_buttons_dx.hover": {
+    "$text_color": "$main_menu_button_preesed_color"
+  },
+
+  "locked@common_buttons_dx.default": {
+    "texture": "textures/uidx/menu_button_locked",
+    "$text_color": "$main_menu_button_locked_color"
+  },
+
+  "button_label": {
+    "type": "label",
+    "layer": 2,
+    "text": "$button_text",
+    "shadow": true,
+    "color": "$text_color",
+    "max_size": [ "100% - 4px", "100% - 4px" ]
+  },
+
+  /*///////////////////////////////////////////////////////////////////////////
+  //  Dark button.
+  ///////////////////////////////////////////////////////////////////////////*/
+  
+  "dark_button_default@ui_deluxe_textures.dark_button_default": {
+    "$text_color": "$main_menu_button_default_color",
+    "controls": [
+      { "$button_content@$button_content": { "layer": 2, "color": "$text_color" } }
+    ]
+  },
+
+  "dark_button_hover@ui_deluxe_textures.dark_button_hover": {
+    "$text_color": "$main_menu_button_hover_color",
+    "controls": [
+      { "$button_content@$button_content": { "layer": 2, "color": "$text_color" } }
+    ]
+  },
+
+  "dark_button_pressed@ui_deluxe_textures.dark_button_pressed": {
+    "$text_color": "$main_menu_button_preesed_color",
+    "controls": [
+      { "$button_content@$button_content": { "layer": 2, "color": "$text_color" } }
+    ]
+  },
+
+  "dark_button_locked@ui_deluxe_textures.dark_button_locked": {
+    "$text_color": "$main_menu_button_locked_color",
+    "controls": [
+      { "$button_content@$button_content": { "layer": 2, "color": "$text_color" } }
+    ]
+  },
+
+  "dark_button@common.button": {
+    "$button_content|default": "",
+    "$button_content": "common_buttons_dx.button_label",
+    "locked_control": "locked",
+    "controls": [
+      { "default@common_buttons_dx.dark_button_default": { } },
+      { "hover@common_buttons_dx.dark_button_hover": { } },
+      { "pressed@common_buttons_dx.dark_button_pressed": { } },
+      { "locked@common_buttons_dx.dark_button_locked": { } }
+    ]
+  }
+}

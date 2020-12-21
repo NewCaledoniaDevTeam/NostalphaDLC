@@ -1,0 +1,5 @@
+{
+  "add_external_server_screen": {
+    "$screen_content": "add_external_server_old.add_external_server_screen_content"
+  }
+}

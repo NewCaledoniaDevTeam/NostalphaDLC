@@ -1,0 +1,414 @@
+{
+  "namespace": "stonecutter_pocket_old",
+
+  "left_tab@common_toggles_dx.toggle_panel": {
+    "$unchecked_control": "ui_old_textures.TabLeftBack",
+    "$checked_control": "ui_old_textures.TabLeftFront",
+    "$unchecked_hover_control": "ui_old_textures.TabLeftBack",
+    "$checked_hover_control": "ui_old_textures.TabLeftFront",
+
+    "$toggle_focus_enabled": false,
+    "$toggle_name": "left_navigation_tab",
+    "$tab_content": "crafting_pocket.empty_tab_panel"
+  },
+
+  "left_tab_stones@stonecutter_pocket_old.left_tab": {
+    "$tab_view_binding_name": "stones_tab_toggle",
+    "$tab_icon": "stonecutter_pocket.stonecutter_item_renderer",
+    "$toggle_group_forced_index": "$left_tab_index_stones",
+
+    "$toggle_binding_type": "global",
+    "$toggle_state_binding_name": "#is_left_tab_stones"
+  },
+
+  "left_tab_inventory@stonecutter_pocket_old.left_tab": {
+    "$tab_view_binding_name": "inventory_left_tab_toggle",
+    "$tab_icon": "loom_pocket.chest_item_renderer",
+    "$toggle_group_forced_index": "$left_tab_index_inventory",
+
+    "$toggle_binding_type": "global",
+    "$toggle_state_binding_name": "#is_left_tab_inventory"
+  },
+
+  "right_tab_stonecutter@ui_old_textures.TabRightFront": {
+    "size": [ 30, 28 ],
+    "controls": [
+      { "default@stonecutter_pocket.stonecutter_item_renderer": { "layer": 8 } }
+    ]
+  },
+
+  "tab_navigation_panel_layout": {
+    "type": "panel",
+    "layer": 4,
+    "size": [ "100%+52px", "100%" ],
+    "anchor_from": "top_middle",
+    "anchor_to": "top_middle",
+    "controls": [
+      {
+        "left_navigation_tabs": {
+          "type": "panel",
+          "size": [ 30, "100%" ],
+          "anchor_to": "top_left",
+          "anchor_from": "top_left",
+          "controls": [
+            {
+              "content": {
+                "type": "stack_panel",
+                "size": [ "100%", "100%" ],
+                "anchor_to": "top_left",
+                "anchor_from": "top_left",
+                "controls": [
+                  {
+                    "close_tab@ui_old_textures.TabLeftFrontTopMost": {
+                      "size": [ 30, 28 ],
+                      "controls": [
+                        { 
+                          "default@common_old.close_button": {
+                            "anchor_to": "top_left",
+                            "anchor_from": "top_left",
+                            "offset": [ 5, 6 ]
+                          }   
+                        }
+                      ]
+                    } 
+									},
+                  { "fill_panel_0": { "type": "panel", "size": [ 1, "fill" ] } },
+                  { "left_tab_patterns@stonecutter_pocket_old.left_tab_stones": { "size": [ 30, 28 ] } },
+                  { "fill_panel_4": { "type": "panel", "size": [ 1, 2 ] } },
+                  { "left_tab_inventory@stonecutter_pocket_old.left_tab_inventory": { "size": [ 30, 28 ] } },
+									{ "fill_panel_5": { "type": "panel", "size": [ 1, 2 ] } }
+                ]
+              }
+            }
+          ]
+        }
+      },
+      {
+        "right_navigation_tabs": {
+          "type": "panel",
+          "size": [ 30, "100%" ],
+          "anchor_to": "top_right",
+          "anchor_from": "top_right",
+          "controls": [
+            {
+              "content": {
+                "type": "stack_panel",
+                "size": [ "100%", "100%" ],
+                "anchor_to": "top_right",
+                "anchor_from": "top_right",
+                "controls": [
+                  { "fill_panel_0": { "type": "panel", "size": [ 1, "fill" ] } },
+									{ "right_tab_stonecutter@stonecutter_pocket_old.right_tab_stonecutter": { "size": [ 30, 28 ] } },
+                  { "fill_panel_3": { "type": "panel", "size": [ 1, 2 ] } }
+                ]
+              }
+            }
+          ]
+        }
+      }
+    ]
+  },
+
+  /*///////////////////////////////////////////////////////////////////////////
+  //  Item Slots
+  ///////////////////////////////////////////////////////////////////////////*/
+
+  "input_item_slot@container_item_old.container_item_32": {
+    "size": [ 32, 32 ],
+    "anchor_from": "center",
+    "anchor_to": "center",
+    "$item_collection_name": "stonecutter_input_items"
+  },
+
+  "result_item_slot@container_item_old.container_item_32": {
+    "size": [ 32, 32 ],
+    "anchor_from": "center",
+    "anchor_to": "center",
+    "$item_collection_name": "stonecutter_result_items",
+    "$button_ref": "stonecutter.result_slot_button"
+  },
+
+  /*///////////////////////////////////////////////////////////////////////////
+  //  Stonecutter Content Stack Panel
+  ///////////////////////////////////////////////////////////////////////////*/
+
+  "input_slots_stack_panel": {
+    "type": "stack_panel",
+    "orientation": "horizontal",
+    "size": [ "100%c", "100%cm" ],
+    "controls": [
+      { "input_item_slot@stonecutter_pocket_old.input_item_slot": {} }
+    ]
+  },
+
+  "stonecutter_content_stack_panel": {
+    "type": "stack_panel",
+    "orientation": "vertical",
+    "size": [ "100% - 12px", "100% - 12px" ],
+    "controls": [
+      {
+        "label_holder": {
+          "type": "panel",
+          "size": [ "100%", "100%c" ],
+          "controls": [
+            { 
+              "stonecutter_label@stonecutter.stonecutter_label": {
+                "shadow": true,
+                "color": "$main_menu_button_default_color"
+              }
+            }
+          ]
+        }
+      },
+      {
+        "padding_1": {
+          "type": "panel",
+          "size": [ 0, 4 ]
+        }
+      },
+      {
+        "panel": {
+          "type": "panel",
+          "size": [ "100%", "fill" ],
+          "controls": [
+            {
+              "stack_panel": {
+                "type": "stack_panel",
+                "orientation": "vertical",
+                "controls": [
+                  {
+                    "input_slots_holder": {
+                      "type": "panel",
+                      "size": [ "100%", "100%c" ],
+                      "controls": [
+                        { "input_slots_stack_panel@stonecutter_pocket_old.input_slots_stack_panel": {} }
+                      ]
+                    }
+                  },
+                  {
+                    "padding_3": {
+                      "type": "panel",
+                      "size": [ 0, 10 ]
+                    }
+                  },
+                  {
+                    "arrow_holder": {
+                      "type": "panel",
+                      "size": [ "100%", 22 ],
+                      "controls": [
+                        { "vertical_arrow_icon@stonecutter_pocket.vertical_arrow_icon": { "texture": "textures/ui_old/arrow_down_large" } }
+                      ]
+                    }
+                  },
+                  {
+                    "padding_4": {
+                      "type": "panel",
+                      "size": [ 0, 10 ]
+                    }
+                  },
+                  {
+                    "result_item_slot_holder": {
+                      "type": "panel",
+                      "size": [ "100%", "100%c" ],
+                      "controls": [
+                        { "result_item_slot@stonecutter_pocket_old.result_item_slot": {} }
+                      ]
+                    }
+                  },
+                  {
+                    "padding_5": {
+                      "type": "panel",
+                      "size": [ 0, 4 ]
+                    }
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      }
+    ]
+  },
+
+  /*///////////////////////////////////////////////////////////////////////////
+  //  Content
+  ///////////////////////////////////////////////////////////////////////////*/
+
+  "scroll_panel_pocket@crafting.scroll_panel": {
+    "$scrolling_grid_item_size": [ 24, 24 ],
+    "$item_renderer_panel_size": [ 21, 21 ],
+    "$item_renderer_size": [ 16, 16 ],
+    "$item_renderer_offset": [ 0, 0 ],
+    "$cell_image_size": [ 24, 24 ],
+
+    "$scroll_background_image_control": "ui_old_textures.scroll_panel",
+
+    "$scroll_size": [ 12, "100%" ],
+    "$scroll_track_image_control": "ui_old_textures.scroll_track",
+    "$scroll_box_mouse_image_control": "ui_old_textures.scroll_box",
+
+    "$scroll_view_port_offset": [ 6, 4 ],
+    "$scroll_view_port_offset_touch": [ 6, 4 ],
+    "$scroll_view_port_size": [ "100%-12px", "100%-8px" ],
+    "$scroll_view_port_size_touch": [ "100%-12px", "100%-8px" ]
+  },
+
+  "pocket_container_grid@container_item_old.container_grid": {
+    "$grid_item_template": "container_item_old.container_item_pocket"
+  },
+
+  "inventory_scroll_panel@stonecutter_pocket_old.scroll_panel_pocket": {
+    "$scrolling_content": "stonecutter_pocket_old.pocket_container_grid"
+  },
+
+  "banner_pattern@loom.banner_pattern": {
+    "size": [ 9, 18 ]
+  },
+
+  "pattern_button@stonecutter.stone_button": {
+    "size": [ 24, 24 ],
+    "$highlight_control": "container_item_old.highlight_slot",
+    "$banner_pattern_ref": "stonecutter.item_panel",
+    "$background_images": "ui_old_textures.cell_image_recipe_default"
+  },
+
+  "scroll_grid_panel": {
+    "type": "panel",
+    "size": [ "100%", "100%c" ],
+    "controls": [
+      { 
+        "grid@stonecutter.scroll_grid": {
+          "$grid_item_template": "stonecutter_pocket_old.pattern_button"
+        }
+      }
+    ]
+  },
+
+  "pattern_scroll_panel@stonecutter_pocket_old.scroll_panel_pocket": {
+    "$scrolling_content": "stonecutter_pocket_old.scroll_grid_panel",
+    "$collection_name": "stones"
+  },
+
+  "left_panel": {
+    "type": "input_panel",
+    "layer": 2,
+    "$is_loom_screen": true,
+    "controls": [
+      {
+        "pattern_scroll_panel@inventory_pocket_old.tab_content": {
+          "$scrolling_pane_control": "stonecutter_pocket_old.pattern_scroll_panel",
+          "layer": 4,
+          "size": [ "100%", "100%" ],
+          "bindings": [
+            {
+              "binding_type": "view",
+              "source_control_name": "stones_tab_toggle",
+              "source_property_name": "#toggle_state",
+              "target_property_name": "#visible"
+            }
+          ]
+        }
+      },
+      {
+        "inventory_scroll_panel@inventory_pocket_old.tab_content": {
+          "$scrolling_pane_control": "stonecutter_pocket_old.inventory_scroll_panel",
+          "size": [ "100%", "100%" ],
+          "bindings": [
+            {
+              "binding_type": "view",
+              "source_control_name": "inventory_left_tab_toggle",
+              "source_property_name": "#toggle_state",
+              "target_property_name": "#visible"
+            }
+          ]
+        }
+      }
+    ]
+  },
+
+  "right_panel": {
+    "type": "panel",
+    "layer": 2,
+    "controls": [
+      { "stonecutter_content_stack_panel@stonecutter_pocket_old.stonecutter_content_stack_panel": { "size": [ "100%", "100%" ] } }
+    ]
+  },
+  
+  "both_panels": {
+    "type": "stack_panel",
+    "size": [ "100%-10px", "100%-8px" ],
+    "orientation": "horizontal",
+    "controls": [
+      {
+        "left_panel@stonecutter_pocket_old.left_panel": {
+          "size": [ "fill", "100%" ]
+        }
+      },
+      {
+        "right_panel@stonecutter_pocket_old.right_panel": {
+          "size": [ "47%", "100%" ]
+        }
+      }
+    ]
+  },
+
+  /*///////////////////////////////////////////////////////////////////////////
+  //  Panels
+  ///////////////////////////////////////////////////////////////////////////*/
+
+  "panels@ui_old_textures.dialog_background": {
+    "size": [ "100% - 64px", "100% - 26px" ],
+    "anchor_from": "top_middle",
+    "anchor_to": "top_middle",
+    "offset": [ 0, 3 ],
+    "controls": [
+      { "tab_navigation_panel@stonecutter_pocket_old.tab_navigation_panel_layout": { } },
+      { "both_panels@stonecutter_pocket_old.both_panels": { } }
+    ]
+  },
+
+  /*///////////////////////////////////////////////////////////////////////////
+  //  Screen.
+  ///////////////////////////////////////////////////////////////////////////*/
+
+  "stonecutter_panel": {
+    "type": "panel",
+    "controls": [
+      {
+        "container_gamepad_helpers@common.container_gamepad_helpers": {
+          "size": [ "100%", 40 ],
+          "$gamepad_helper_size": [ "100%c", 15 ],
+          "$a_b_stack_panel_orientation": "vertical",
+          "$x_y_stack_panel_orientation": "vertical",
+          "$a_b_stack_panel_size": [ "100%cm", "100%" ],
+          "$x_y_stack_panel_size": [ "100%cm", "100%" ]
+        }
+      },
+      {
+        "flying_item_renderer@common.flying_item_renderer": {
+          "layer": 14
+        }
+      },
+      {
+        "selected_item_details_factory@common.selected_item_details_factory": {
+          "$offset": [ 0, "-37px" ]
+        }
+      },
+      {
+        "root_panel@common.root_panel": {
+          "layer": 1,
+          "size": [ "100%", "100%" ],
+          "anchor_from": "bottom_middle",
+          "anchor_to": "bottom_middle",
+          "controls": [
+            { "inventory_selected_icon_button@common_dx.inventory_selected_icon_button": {} },
+            { "gamepad_cursor@common.gamepad_cursor_button": {} },
+            { "hold_icon@common.inventory_take_progress_icon_button": {} },
+            { "panels@stonecutter_pocket_old.panels": {} },
+            { "hotbar_panel@inventory_pocket_old.hotbar_panel": { } }
+          ]
+        }
+      }
+    ]
+  }
+}

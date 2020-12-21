@@ -1,0 +1,67 @@
+{
+  "start_screen": {
+    "variables": [
+      {
+        "requires": "$desktop_screen",
+        "$screen_content": "start_deluxe.start_screen_content"
+      },
+      {
+        "requires": "$pocket_screen",
+        "$screen_content": "start_old.start_screen_content"
+      }
+    ]
+  },
+
+  "skin_viewer_panel/paper_doll_panel": {
+    "controls": [
+      {
+        "paper_doll": {
+          "type": "custom",
+          "renderer": "paper_doll_renderer",
+          "camera_tilt_degrees": 0,
+          "starting_rotation": 0,
+          "layer": 2,
+          "anchor_from": "bottom_middle",
+          "anchor_to": "bottom_middle",
+          "rotation": "gesture_x",
+          "size": [ "100%", "100%" ],
+          "offset": [ 0, -22 ],
+          "animation_reset_name": "screen_animation_reset",
+          "anims": [
+            "@common.screen_exit_size_animation_push",
+            "@common.screen_exit_size_animation_pop",
+            "@common.screen_entrance_size_animation_push",
+            "@common.screen_entrance_size_animation_pop"
+          ],
+          "bindings": [
+            {
+              "binding_type": "view",
+              "source_control_name": "viewer_panel",
+              "source_property_name": "#gesture_delta_source",
+              "target_property_name": "#gesture_delta_source"
+            },
+            {
+              "binding_type": "view",
+              "source_control_name": "viewer_panel",
+              "source_property_name": "#gesture_mouse_delta_x",
+              "target_property_name": "#gesture_mouse_delta_x"
+            },
+            {
+              "binding_name": "#is_appearance_visible",
+              "binding_name_override": "#visible",
+              "binding_condition": "always"
+            }
+          ]
+        }
+      },
+      {
+        "appearacne_loading_panel@common_store.progress_loading": {
+          "$hide_failure_text": true,
+          "$hide_progress_loading_outline": true,
+          "$source_control_name": "paper_doll",
+          "$source_property_name": "(not #visible)"
+        }
+      }
+    ]
+  }
+}

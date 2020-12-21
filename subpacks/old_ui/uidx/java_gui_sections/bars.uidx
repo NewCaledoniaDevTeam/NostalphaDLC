@@ -1,0 +1,176 @@
+{
+  "namespace": "bars_java",
+
+  "bars_base": {
+    "type": "image",
+    "texture": "assets/minecraft/textures/gui/bars",
+    "size": [ "100%", "100%" ],
+    "$bars_uv|default": [ 0, 0 ],
+    "$bars_uv_size|default": [ 0, 0 ],
+    "uv": "$bars_uv",
+    "uv_size": "$bars_uv_size"
+  },
+ 
+  /*////// Base //////*/
+
+  "red_bar_empty": {
+    "type": "panel",
+    "controls": [
+      {
+        "base@bars_java.bars_base": {
+          "variables": [
+            {
+              "requires": "($bars_resolution = 256x)",
+              "$bars_uv_size": [ 182, 5 ]
+            },
+            {
+              "requires": "($bars_resolution = 512x)",
+              "$bars_uv_size": [ 364, 10 ]
+            },
+            {
+              "requires": "($bars_resolution = 1024x)",
+              "$bars_uv_size": [ 728, 20 ]
+            },
+            {
+              "requires": "($bars_resolution = 2048x)",
+              "$bars_uv_size": [ 1456, 40 ]
+            },
+            {
+              "requires": "($bars_resolution = 4096x)",
+              "$bars_uv_size": [ 2912, 80 ]
+            },
+            {
+              "requires": "($bars_resolution = 8192x)",
+              "$bars_uv_size": [ 5824, 160 ]
+            }
+          ]
+        }
+      }
+    ],
+    "variables": [
+      {
+        "requires": "($bars_resolution = 256x)",
+        "$bars_uv": [ 0, 20 ]
+      },
+      {
+        "requires": "($bars_resolution = 512x)",
+        "$bars_uv": [ 0, 40 ]
+      },
+      {
+        "requires": "($bars_resolution = 1024x)",
+        "$bars_uv": [ 0, 80 ]
+      },
+      {
+        "requires": "($bars_resolution = 2048x)",
+        "$bars_uv": [ 0, 160 ]
+      },
+      {
+        "requires": "($bars_resolution = 4096x)",
+        "$bars_uv": [ 0, 320 ]
+      },
+      {
+        "requires": "($bars_resolution = 8192x)",
+        "$bars_uv": [ 0, 640 ]
+      }
+    ]
+  },
+
+  "red_bar_full@bars_java.bars_base": {
+    "variables": [
+      {
+        "requires": "($bars_resolution = 256x)",
+        "$bars_uv": [ 0, 25 ],
+        "$bars_uv_size": [ 182, 5 ]
+      },
+      {
+        "requires": "($bars_resolution = 512x)",
+        "$bars_uv": [ 0, 50 ],
+        "$bars_uv_size": [ 364, 10 ]
+      },
+      {
+        "requires": "($bars_resolution = 1024x)",
+        "$bars_uv": [ 0, 100 ],
+        "$bars_uv_size": [ 728, 20 ]
+      },
+      {
+        "requires": "($bars_resolution = 2048x)",
+        "$bars_uv": [ 0, 200 ],
+        "$bars_uv_size": [ 1456, 40 ]
+      },
+      {
+        "requires": "($bars_resolution = 4096x)",
+        "$bars_uv": [ 0, 400 ],
+        "$bars_uv_size": [ 2912, 80 ]
+      },
+      {
+        "requires": "($bars_resolution = 8192x)",
+        "$bars_uv": [ 0, 800 ],
+        "$bars_uv_size": [ 5824, 160 ]
+      }
+    ]
+  },
+
+  "nub_bar_10_empty@bars_java.red_bar_empty": {
+    "variables": [
+      {
+        "requires": "($bars_resolution = 256x)",
+        "$bars_uv": [ 0, 90 ]
+      },
+      {
+        "requires": "($bars_resolution = 512x)",
+        "$bars_uv": [ 0, 180 ]
+      },
+      {
+        "requires": "($bars_resolution = 1024x)",
+        "$bars_uv": [ 0, 360 ]
+      },
+      {
+        "requires": "($bars_resolution = 2048x)",
+        "$bars_uv": [ 0, 720 ]
+      },
+      {
+        "requires": "($bars_resolution = 4096x)",
+        "$bars_uv": [ 0, 1440 ]
+      },
+      {
+        "requires": "($bars_resolution = 8192x)",
+        "$bars_uv": [ 0, 2880 ]
+      }
+    ]
+  },
+
+  "nub_bar_10_full@bars_java.bars_base": {
+    "variables": [
+      {
+        "requires": "($bars_resolution = 256x)",
+        "$bars_uv": [ 0, 95 ],
+        "$bars_uv_size": [ 182, 5 ]
+      },
+      {
+        "requires": "($bars_resolution = 512x)",
+        "$bars_uv": [ 0, 190 ],
+        "$bars_uv_size": [ 364, 10 ]
+      },
+      {
+        "requires": "($bars_resolution = 1024x)",
+        "$bars_uv": [ 0, 380 ],
+        "$bars_uv_size": [ 728, 20 ]
+      },
+      {
+        "requires": "($bars_resolution = 2048x)",
+        "$bars_uv": [ 0, 760 ],
+        "$bars_uv_size": [ 1456, 40 ]
+      },
+      {
+        "requires": "($bars_resolution = 4096x)",
+        "$bars_uv": [ 0, 1520 ],
+        "$bars_uv_size": [ 2912, 80 ]
+      },
+      {
+        "requires": "($bars_resolution = 8192x)",
+        "$bars_uv": [ 0, 3040 ],
+        "$bars_uv_size": [ 5824, 160 ]
+      }
+    ]
+  }
+}

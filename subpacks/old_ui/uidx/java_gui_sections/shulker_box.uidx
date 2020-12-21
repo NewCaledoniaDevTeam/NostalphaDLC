@@ -1,0 +1,47 @@
+{
+  "namespace": "shulker_box_java_dx",
+
+  "shulker_box_base@java_gui_common.image_panel": {
+    "$texture": "assets/minecraft/textures/gui/container/generic_54",
+    "$uv_size": [ 176, 222 ]
+  },
+
+  /*////// Base //////*/
+
+  "dialog_bg_shulker_box": {
+    "type": "stack_panel",
+    "size": [ 176, "100%" ],
+    "controls": [
+      {
+        "top": {
+          "type": "panel",
+          "size": [ "100%", "fill" ],
+          "clips_children": true,
+          "controls": [
+            { 
+              "generic_54_base@shulker_box_java_dx.shulker_box_base": { 
+                "anchor_from": "top_left",
+                "anchor_to": "top_left"
+              }
+            }
+          ]
+        }
+      },
+      {
+        "bottom": {
+          "type": "panel",
+          "size": [ "100%", 95 ],
+          "clips_children": true,
+          "controls": [
+            { 
+              "generic_54_base@shulker_box_java_dx.shulker_box_base": { 
+                "anchor_from": "bottom_left",
+                "anchor_to": "bottom_left"
+              }
+            }
+          ]
+        }
+      }
+    ]
+  }
+}

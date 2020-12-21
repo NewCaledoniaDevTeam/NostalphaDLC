@@ -1,0 +1,7 @@
+{
+  "pause_screen": {
+    "$screen_content": "pause_old.pause_screen_content",
+    "$screen_bg_content": "common_old.screen_background",
+    "variables": [ ]
+  }
+}

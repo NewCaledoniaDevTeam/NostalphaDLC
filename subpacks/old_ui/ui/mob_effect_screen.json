@@ -1,0 +1,68 @@
+{
+  "main_background": {
+    "texture": "textures/ui_old/dialog_background",
+    "layer": 1,
+    "controls": [
+      {
+        "scroll_panel": {
+          "type": "image",
+          "anchor_from": "top_left",
+          "anchor_to": "top_left",
+          "size": [ "100%-8px", "100%-8px" ],
+          "offset": [ 4, 4 ],
+          "texture": "textures/ui_old/scroll_panel"
+        }
+      }
+    ]
+  },
+
+  "button_background": {
+    "texture": "textures/ui_old/TabLeftFrontTopMost"
+  },
+
+  "mob_effect_list_content_panel": {
+    "layer": 4
+  },
+
+  "main_background_left_handed": {
+    "texture": "textures/ui_old/dialog_background",
+    "layer": 1,
+    "controls": [
+      {
+        "scroll_panel": {
+          "type": "image",
+          "layer": 2,
+          "anchor_from": "top_left",
+          "anchor_to": "top_left",
+          "size": [ "100%-8px", "100%-8px" ],
+          "offset": [ 4, 4 ],
+          "texture": "textures/ui_old/scroll_panel"
+        }
+      }
+    ]
+  },
+
+  "button_background_left_handed": {
+    "texture": "textures/ui_old/TabRightFrontTopMost"
+  },
+
+  "mob_effect_list_content_panel_left_handed": {
+    "layer": 4
+  },
+
+  "mob_effect_screen_close_button@common_old.close_button": {
+    "anchor_from": "top_right",
+    "anchor_to": "top_right",
+    "size": [ 18, 18 ],
+    "offset": [ "-90% - 3px", 7.5 ],
+    "$pressed_button_name": "button.menu_continue"
+  },
+
+  "mob_effect_screen_close_button_left_handed@common_old.close_button": {
+    "anchor_from": "top_left",
+    "anchor_to": "top_left",
+    "size": [ 18, 18 ],
+    "offset": [ "90% + 4px", 7.5 ],
+    "$pressed_button_name": "button.menu_continue"
+  }
+}

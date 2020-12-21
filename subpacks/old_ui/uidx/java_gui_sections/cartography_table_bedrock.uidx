@@ -1,0 +1,55 @@
+{
+  "namespace": "cartography_table_bedrock_dx",
+
+  "cartography_base@java_gui_common.image_panel": {
+    "$base_size": [ 512, 256 ],
+    "$texture": "assets/uidx/textures/gui/container/cartography_table"
+  },
+
+  /*////// Base //////*/
+
+  /* Cartography Screen */
+
+  "dialog_bg_cartography@cartography_table_bedrock_dx.cartography_base": {
+    "$uv_size": [ 176, 224 ]
+  },
+  
+  /* Map */
+  
+  "normal_map@cartography_table_bedrock_dx.cartography_base": {
+    "$uv": [ -176, 0 ],
+    "$uv_size": [ 66, 66 ]
+  },
+
+  /* Empty Map */
+
+  "empty_map": { "type": "panel" },
+
+  /* Zoom */
+
+  "zoom_map@cartography_table_bedrock_dx.normal_map": {
+    "$uv": [ -242, 0 ]
+  },
+
+  /* Copy */
+
+  "copy_map@cartography_table_bedrock_dx.normal_map": {
+    "$uv": [ -308, 0 ]
+  },
+  /* Lock */
+
+  "lock_map@cartography_table_bedrock_dx.normal_map": {
+    "$uv": [ -374, 0 ]
+  },
+
+  /* Text Edit */
+
+  "cartography_text_edit_active_java@cartography_table_bedrock_dx.cartography_base": {
+    "$uv": [ 0, -224 ],
+    "$uv_size": [ 110, 16 ]
+  },
+
+  "cartography_text_edit_inactive_java@cartography_table_bedrock_dx.cartography_text_edit_active_java": {
+    "$uv": [ 0, -240 ]
+  }
+}

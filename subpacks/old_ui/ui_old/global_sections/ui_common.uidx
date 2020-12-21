@@ -1,0 +1,312 @@
+{
+  "namespace": "common_old",
+
+  /*///////////////////////////////////////////////////////////////////////////
+  //  Button.
+  ///////////////////////////////////////////////////////////////////////////*/
+
+  "button_label": {
+    "type": "label",
+    "layer": 2,
+    "text": "$button_text",
+    "shadow": true,
+    "color": "$text_color",
+    "size": [ "default", "default" ],
+    "max_size": [ "100% - 4px", "100% - 4px" ],
+    "bindings": [
+      {
+        "binding_name": "$button_text",
+        "binding_condition": "none"
+      }
+    ]
+  },
+
+  "button_label_remove@common_old.button_label": {
+    "color": [ 1.0, 0.0, 0.0 ]
+  },
+
+  "main_button_default@ui_old_textures.main_button_default": {
+    "$text_color": "$main_menu_button_default_color",
+    "controls": [
+      { "$button_content@$button_content": { "layer": 2 } }
+    ]
+  },
+
+  "main_button_hover@ui_old_textures.main_button_hover": {
+    "$text_color": "$main_menu_button_hover_color",
+    "controls": [
+      { "$button_content@$button_content": { "layer": 2 } }
+    ]
+  },
+
+  "main_button_pressed@ui_old_textures.main_button_pressed": {
+    "$text_color": "$main_menu_button_preesed_color",
+    "controls": [
+      { "$button_content@$button_content": { "layer": 2 } }
+    ]
+  },
+
+  "main_button_pressed_hover@ui_old_textures.main_button_pressed_hover": {
+    "$text_color": "$main_menu_button_hover_color",
+    "controls": [
+      { "$button_content@$button_content": { "layer": 2 } }
+    ]
+  },
+
+  "main_button_locked@ui_old_textures.main_button_locked": {
+    "$text_color": "$main_menu_button_locked_color",
+    "controls": [
+      { "$button_content@$button_content": { "layer": 2 } }
+    ]
+  },
+
+  "second_button_default@ui_old_textures.second_button_default": {
+    "$text_color": "$main_menu_button_default_color",
+    "controls": [
+      { "icon_control@$icon_control": { "layer": 2, "color": "$text_color" } }
+    ]
+  },
+
+  "second_button_hover@ui_old_textures.second_button_hover": {
+    "$text_color": "$main_menu_button_hover_color",
+    "controls": [
+      { "icon_control@$icon_control": { "layer": 2, "color": "$text_color" } }
+    ]
+  },
+
+  "second_button_pressed@ui_old_textures.second_button_pressed": {
+    "$text_color": "$main_menu_button_preesed_color",
+    "controls": [
+      { "icon_control@$icon_control": { "layer": 2, "color": "$text_color" } }
+    ]
+  },
+
+  "second_button_checked@ui_old_textures.second_button_checked": {
+    "$text_color": "$main_menu_button_default_color",
+    "controls": [
+      { "icon_control@$icon_control": { "layer": 2, "color": "$text_color" } }
+    ]
+  },
+
+  "second_button_checked_hover@ui_old_textures.second_button_checked_hover": {
+    "$text_color": "$main_menu_button_hover_color",
+    "controls": [
+      { "icon_control@$icon_control": { "layer": 2, "color": "$text_color" } }
+    ]
+  },
+
+  "second_button_locked@ui_old_textures.main_button_locked": {
+    "$text_color": "$main_menu_button_locked_color",
+    "controls": [
+      { "icon_control@$icon_control": { "layer": 2, "color": "$text_color" } }
+    ]
+  },
+  
+  "old_main_button@common.button": {
+    "$button_content|default": "",
+    "$button_content": "common_old.button_label",
+    "locked_control": "locked",
+    "controls": [
+      { "default@common_old.main_button_default": { } },
+      { "hover@common_old.main_button_hover": { } },
+      { "pressed@common_old.main_button_pressed": { } },
+      { "locked@common_old.main_button_locked": { } }
+    ]
+  },
+
+  "old_second_button@common.button": {
+    "$icon_control|default": "",
+    "locked_control": "locked",
+    "controls": [
+      { "default@common_old.second_button_default": { } },
+      { "hover@common_old.second_button_hover": { } },
+      { "pressed@common_old.second_button_pressed": { } },
+      { "locked@common_old.second_button_locked": { } }
+    ]
+  },
+
+  /*///////////////////////////////////////////////////////////////////////////
+  //  Objects.
+  ///////////////////////////////////////////////////////////////////////////*/
+
+  "screen_background": {
+    "type": "image",
+    "texture": "textures/ui/Black",
+    "size": [ "100%", "100%" ],
+    "alpha": 0.5
+  },
+
+  "back_button@common.close_button": {
+    "$button_text": "gui.back",
+    "size": [ 38, 18 ],
+    "$button_content": "common_old.button_label",
+    "controls": [
+      { "default@common_old.main_button_default": { } },
+      { "hover@common_old.main_button_hover": { } },
+      { "pressed@common_old.main_button_pressed": { } }
+    ]
+  },
+
+  "back_second_button@common.close_button": {
+    "$button_text": "gui.back",
+    "size": [ 38, 18 ],
+    "$icon_control": "common_old.button_label",
+    "controls": [
+      { "default@common_old.second_button_default": { } },
+      { "hover@common_old.second_button_hover": { } },
+      { "pressed@common_old.second_button_pressed": { } }
+    ]
+  },
+
+  "close_button_hover@ui_old_textures.close_button_default": {
+    "controls": [
+      {
+        "focus_border@common_buttons.focus_border": {
+          "size": [ "100%", "100%" ]
+        } 
+      }
+    ]
+  },
+
+  "close_button@common.close_button": {
+    "$button_text": "gui.back",
+    "size": [ 18, 18 ],
+    "controls": [
+      { "default@ui_old_textures.close_button_default": { } },
+      { "hover@common_old.close_button_hover": { } },
+      { "pressed@ui_old_textures.close_button_pressed": { } }
+    ]
+  },
+
+  /*///////////////////////////////////////////////////////////////////////////
+  //  Modified Grid!!
+  ///////////////////////////////////////////////////////////////////////////*/
+
+  "stack_count_label@common.stack_count_label": {
+    //"$font_size|default": "small",
+    //"font_size": "$font_size",
+    "offset": [ 0, 1 ],
+    "anchor_to": "bottom_right",
+    "anchor_from": "bottom_right",
+    "layer": 8
+  },
+
+  "grid_item_for_inventory@container_item_old.container_item": {
+    "$item_collection_name": "inventory_items"
+  },
+
+  "hotbar_grid_template": {
+    "type": "grid",
+    "size": [ 162, 18 ],
+    "anchor_from": "bottom_left",
+    "anchor_to": "bottom_left",
+    "offset": [ 7, -7 ],
+    "grid_dimensions": [ 9, 1 ],
+    "grid_item_template": "common_old.grid_item_for_hotbar",
+    "collection_name": "hotbar_items"
+  },
+
+  "grid_item_for_hotbar@container_item_old.container_item": {
+    "$item_collection_name": "hotbar_items"
+  },
+
+  "inventory_icon_panel": {
+    "type": "panel",
+    "size": [ 18, 18 ],
+    "controls": [
+      { "selected_item_icon@container_item_old.inventory_selected_icon": {} },
+      {
+        "hover_text@common.hover_text": {
+          "ignored": "(not $touch)",
+          "layer": 49,
+          "bindings": [
+            {
+              "binding_name": "#hover_text",
+              "binding_condition": "visible"
+            }
+          ]
+        }
+      }
+    ]
+  },
+
+  "inventory_selected_icon_button@common.inventory_selected_icon_button": {
+    "size": [ 18, 18 ],
+    "controls": [
+      { "default@common_old.inventory_icon_panel": {} },
+      { "pressed@common_old.inventory_icon_panel": {} },
+      { "hover@common_old.inventory_icon_panel": {} },
+      { "durability_bar_grabbed@common.durability_bar_grabbed": {
+          "offset": [ -2, 4 ],
+          "size": [ 16, 1 ]
+        }
+      }
+    ]
+  },
+
+  "null_panel": {
+    "type": "panel",
+    "size": [ "100%", "100%" ]
+  },
+
+  /*///////////////////////////////////////////////////////////////////////////
+  //  Slider.
+  ///////////////////////////////////////////////////////////////////////////*/
+  
+  /*  Slider Bar */
+
+  "slider_bar_default": {
+    "type": "panel",
+    "$background_control": "ui_old_textures.slider_line",
+    "$progress_control": "common_dx.null_panel",
+    "$background_control_name": "slider_background",
+    "$text_color": "$main_menu_button_default_color",
+
+    "color": "$slider_default_border_color",
+
+    "size": [ "100% +12px", 17 ],
+
+    "controls": [
+      {
+        "sizing_panel": {
+          "size": [ "100% -12px", 3 ],
+          "type": "panel",
+          "controls": [
+            {
+              "left_step@ui_old_textures.slider_step": {
+                "visible": "$side_steps_visible",
+                "anchor_from": "left_middle",
+                "anchor_to": "left_middle",
+                "offset": [ -1, 0 ]
+              }
+            },
+            {
+              "$background_control_name@$background_control": {
+                "size": [ "100%", 3 ],
+                "layer": 1
+              }
+            },
+            {
+              "right_step@ui_old_textures.slider_step": {
+                "visible": "$side_steps_visible",
+                "anchor_from": "right_middle",
+                "anchor_to": "right_middle",
+                "offset": [ 1, 0 ]
+              }
+            }
+          ]
+        }
+      }
+    ]
+  },
+
+  "slider_bar_hover@common_old.slider_bar_default": {
+    "color": "$main_menu_button_hover_color",
+
+    "$background_control": "ui_old_textures.slider_line",
+    "$progress_control": "common_dx.null_panel",
+    "$background_control_name": "slider_background_hover",
+    "$progress_control_name": "slider_progress_hover",
+    "$text_color": "$main_menu_button_hover_color"
+  }
+}

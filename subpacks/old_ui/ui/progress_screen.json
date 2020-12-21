@@ -1,0 +1,36 @@
+{
+  "realms_loading_progress_screen": {
+    "$screen_bg_content": "common_java.portal_background",
+    "$screen_content": "progress_deluxe.world_dimension_progress_screen_content"
+  },
+
+  "world_loading_progress_screen": {
+    "$screen_bg_content": "common_java.options_background",
+    "$screen_content": "progress_deluxe.world_loading_progress_screen_content"
+  },
+
+  "overworld_loading_progress_screen": {
+    "$screen_bg_content": "progress.overworld_loading_background",
+    "$screen_content": "progress_deluxe.world_dimension_progress_screen_content"
+  },
+
+  "nether_loading_progress_screen": {
+    "$screen_bg_content": "progress.nether_loading_background",
+    "$screen_content": "progress_deluxe.world_dimension_progress_screen_content"
+  },
+
+  "theend_loading_progress_screen": {
+    "$screen_bg_content": "progress.theend_loading_background",
+    "$screen_content": "progress_deluxe.world_dimension_progress_screen_content"
+  },
+
+  "world_saving_progress_screen": {
+    "$screen_bg_content": "common_java.options_background",
+    "$screen_content": "progress_deluxe.world_saving_progress_screen_content"
+  },
+
+  "world_convert_modal_progress_screen": {
+    "$screen_bg_content": "common_java.options_background",
+    "$screen_content": "progress_deluxe.world_loading_progress_screen_content"
+  }
+}

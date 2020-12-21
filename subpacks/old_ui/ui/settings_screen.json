@@ -1,0 +1,45 @@
+{
+
+  "screen_world_create": {
+    "$screen_content": "create_and_edit_world_old.create_world_screen_content",
+    "$title_text": "createWorldScreen.header.local",
+    "$screen_bg_content": "common_dx.null_panel",
+    "$header_safezone_control": "common_dx.null_panel",
+    "$header_bar_control": "common_dx.null_panel",
+    "$is_full_screen_layout": false
+  },
+
+  "screen_template_create": {
+    "$screen_content": "create_and_edit_world_old.create_world_screen_content",
+    "$title_text": "createWorldScreen.header.local",
+    "$screen_bg_content": "common_dx.null_panel",
+    "$header_safezone_control": "common_dx.null_panel",
+    "$header_bar_control": "common_dx.null_panel",
+    "$is_full_screen_layout": false
+  },
+
+  "screen_world_edit": {
+    "$screen_content": "create_and_edit_world_old.create_world_screen_content",
+    "$title_text": "createWorldScreen.header.editLocal",
+    "$screen_bg_content": "common_dx.null_panel",
+    "$header_safezone_control": "common_dx.null_panel",
+    "$header_bar_control": "common_dx.null_panel",
+    "$is_full_screen_layout": false
+  },
+
+  "screen_controls_and_settings": {
+    "$screen_content": "settings_old.settings_screen_content",
+    "$screen_bg_content": "settings_old.screen_background",
+    "$header_safezone_control": "common_dx.null_panel",
+    "$header_bar_control": "common_dx.null_panel",
+    "$is_full_screen_layout": false
+  },
+
+  "screen_world_controls_and_settings": {
+    "$screen_content": "settings_old.settings_screen_content",
+    "$screen_bg_content": "settings_old.screen_background",
+    "$header_safezone_control": "common_dx.null_panel",
+    "$header_bar_control": "common_dx.null_panel",
+    "$is_full_screen_layout": false
+  }
+}

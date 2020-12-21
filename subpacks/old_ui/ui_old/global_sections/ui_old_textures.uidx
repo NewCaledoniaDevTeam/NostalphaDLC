@@ -1,0 +1,746 @@
+{
+  "namespace": "ui_old_textures",
+
+  /*///////////////////////////////////////////////////////////////////////////
+  //  Buttons.
+  ///////////////////////////////////////////////////////////////////////////*/
+
+  "main_button_default": {
+    "type": "image",
+    "texture": "textures/ui_old/main_button_default"
+  },
+
+  "main_button_hover": {
+    "type": "image",
+    "texture": "textures/ui_old/main_button_hover"
+  },
+
+  "main_button_pressed": {
+    "type": "image",
+    "texture": "textures/ui_old/main_button_pressed"
+  },
+
+  "main_button_pressed_hover": {
+    "type": "image",
+    "texture": "textures/ui_old/main_button_pressed_hover"
+  },
+
+  "main_button_locked": {
+    "type": "image",
+    "texture": "textures/ui_old/main_button_locked"
+  },
+
+  "second_button_default": {
+    "type": "image",
+    "texture": "textures/ui_old/second_button_default"
+  },
+
+  "second_button_hover": {
+    "type": "image",
+    "texture": "textures/ui_old/second_button_hover"
+  },
+
+  "second_button_pressed": {
+    "type": "image",
+    "texture": "textures/ui_old/second_button_pressed"
+  },
+
+  "second_button_checked": {
+    "type": "image",
+    "texture": "textures/ui_old/second_button_checked"
+  },
+
+  "second_button_checked_hover": {
+    "type": "image",
+    "texture": "textures/ui_old/second_button_checked_hover"
+  },
+
+  "close_button_default": {
+    "type": "image",
+    "size": [ "100%", "100%" ],
+    "texture": "textures/ui_old/close_button_default"
+  },
+
+  "close_button_pressed": {
+    "type": "image",
+    "size": [ "100%", "100%" ],
+    "texture": "textures/ui_old/close_button_pressed"
+  },
+
+  "close_button_x": {
+    "type": "image",
+    "size": [ 7, 7 ],
+    "texture": "textures/uidx/close_button_x",
+    "bindings": [
+      {
+        "binding_name": "#close_button_visible",
+        "binding_name_override": "#visible"
+      }
+    ]
+  },
+
+  "close_button_default_win10": {
+    "type": "image",
+    "size": [ "100%", "100%" ],
+    "texture": "textures/uidx/close_button_default",
+    "bindings": [
+      {
+        "binding_name": "#close_button_visible",
+        "binding_name_override": "#visible"
+      }
+    ]
+  },
+
+  "close_button_hover_win10": {
+    "type": "image",
+    "size": [ "100%", "100%" ],
+    "texture": "textures/uidx/close_button_hover",
+    "bindings": [
+      {
+        "binding_name": "#close_button_visible",
+        "binding_name_override": "#visible"
+      }
+    ]
+  },
+
+  "close_button_pressed_win10": {
+    "type": "image",
+    "size": [ "100%", "100%" ],
+    "texture": "textures/uidx/close_button_pressed",
+    "bindings": [
+      {
+        "binding_name": "#close_button_visible",
+        "binding_name_override": "#visible"
+      }
+    ]
+  },
+
+  /*///////////////////////////////////////////////////////////////////////////
+  //  Toggles.
+  ///////////////////////////////////////////////////////////////////////////*/
+
+  "toggle_off": {
+    "type": "image",
+    "texture": "textures/ui_old/toggle_off"
+  },
+  
+  "toggle_off_hover": {
+    "type": "image",
+    "texture": "textures/ui_old/toggle_off_hover"
+  },
+
+  "toggle_on": {
+    "type": "image",
+    "texture": "textures/ui_old/toggle_on"
+  },
+  
+  "toggle_on_hover": {
+    "type": "image",
+    "texture": "textures/ui_old/toggle_on_hover"
+  },
+
+  "toggle_off_locked": {
+    "type": "image",
+    "texture": "textures/ui_old/toggle_off",
+    "alpha": 0.5
+  },
+
+  "toggle_on_locked": {
+    "type": "image",
+    "texture": "textures/ui_old/toggle_on",
+    "alpha": 0.5
+  },
+
+  /*///////////////////////////////////////////////////////////////////////////
+  //  Slider.
+  ///////////////////////////////////////////////////////////////////////////*/
+
+  "slider_box_default": {
+    "type": "image",
+    "layer": 3,
+    "texture": "textures/ui_old/slider_box_default"
+  },
+
+  "slider_box_hover": {
+    "type": "image",
+    "layer": 3,
+    "texture": "textures/ui_old/slider_box_hover"
+  },
+
+  "slider_box_locked": {
+    "type": "image",
+    "layer": 3,
+    "texture": "textures/ui_old/slider_box_default",
+    "alpha": 0.5
+  },
+
+  "slider_line": {
+    "type": "image",
+    "layer": 1,
+    "texture": "textures/ui_old/slider_line"
+  },
+
+  "slider_step": {
+    "type": "image",
+    "size": [ 4, 7 ],
+    "layer": 2,
+    "texture": "textures/ui_old/slider_step",
+    "offset": "$step_offset"
+  },
+
+  /*///////////////////////////////////////////////////////////////////////////
+  //  Misc.
+  ///////////////////////////////////////////////////////////////////////////*/
+
+  "settings_button_icon": {
+    "type": "image",
+    "texture": "textures/ui_old/settings_button_icon",
+    "size": [ 22, 22 ]
+  },
+  
+  "language_button_icon": {
+    "type": "image",
+    "texture": "textures/ui_old/language_button_icon",
+    "size": [ 22, 22 ]
+  },
+
+  "skin_button_icon": {
+    "type": "image",
+    "texture": "textures/ui_old/skin_button_icon",
+    "size": [ 22, 22 ]
+  },
+
+  "tab_panel": {
+    "type": "image",
+    "texture": "textures/ui_old/tab_panel"
+  },
+
+  "panel": {
+    "type": "image",
+    "texture": "textures/ui_old/panel"
+  },
+
+  "text_input": {
+    "type": "image",
+    "texture": "textures/ui_old/text_input"
+  },
+
+  "text_input_hover": {
+    "type": "image",
+    "texture": "textures/ui_old/text_input_hover"
+  },
+
+  "text_input_locked": {
+    "type": "image",
+    "texture": "textures/ui_old/text_input",
+    "alpha": 0.5
+  },
+
+  "icon_take_screenshot": {
+    "type": "image",
+    "texture": "textures/ui_old/icon_take_screenshot",
+    "size": [ 11, 11 ]
+  },
+
+  "icon_skin": {
+    "type": "image",
+    "texture": "textures/ui_old/icon_skin",
+    "size": [ 11, 11 ]
+  },
+
+  "icon_skin_import": {
+    "type": "image",
+    "texture": "textures/ui_old/icon_skin_import",
+    "size": [ 11, 11 ]
+  },
+
+  /*///////////////////////////////////////////////////////////////////////////
+  //  Play.
+  ///////////////////////////////////////////////////////////////////////////*/
+
+  "icon_edit": {
+    "type": "image",
+    "texture": "textures/ui_old/icon_edit",
+    "size": [ 11, 11 ]
+  },
+
+  "icon_feed": {
+    "type": "image",
+    "texture": "textures/ui_old/icon_feed",
+    "size": [ 11, 11 ]
+  },
+
+  "icon_remove": {
+    "type": "image",
+    "texture": "textures/ui_old/icon_remove",
+    "size": [ 11, 11 ]
+  },
+
+  "icon_add_server": {
+    "type": "image",
+    "texture": "textures/ui_old/icon_add_server",
+    "size": [ 11, 11 ]
+  },
+
+  "icon_add_friend": {
+    "type": "image",
+    "texture": "textures/ui_old/icon_add_friend",
+    "size": [ 11, 11 ]
+  },
+
+  "icon_join_realm": {
+    "type": "image",
+    "texture": "textures/ui_old/icon_join_realm",
+    "size": [ 11, 11 ]
+  },
+
+  "dot_1": {
+    "type": "image",
+    "texture": "textures/ui_old/dot_1",
+    "size": [ 9, 10 ]
+  },
+
+  "dot_2": {
+    "type": "image",
+    "texture": "textures/ui_old/dot_2",
+    "size": [ 9, 10 ]
+  },
+
+  "dot_3": {
+    "type": "image",
+    "texture": "textures/ui_old/dot_3",
+    "size": [ 9, 10 ]
+  },
+
+  "Ping_Green": {
+    "type": "image",
+    "texture": "textures/ui_old/Ping_Green",
+    "size": [ 9, 10 ]
+  },
+
+  "Ping_Offline_Red": {
+    "type": "image",
+    "texture": "textures/ui_old/Ping_Offline_Red",
+    "size": [ 9, 10 ]
+  },
+
+  "Ping_Red": {
+    "type": "image",
+    "texture": "textures/ui_old/Ping_Red",
+    "size": [ 9, 10 ]
+  },
+
+  "Ping_Yellow": {
+    "type": "image",
+    "texture": "textures/ui_old/Ping_Yellow",
+    "size": [ 9, 10 ]
+  },
+
+  "icon_worlds": {
+    "type": "image",
+    "texture": "textures/ui_old/icon_worlds",
+    "size": [ 11, 11 ]
+  },
+
+  "icon_friends": {
+    "type": "image",
+    "texture": "textures/ui_old/icon_friends",
+    "size": [ 11, 11 ]
+  },
+
+  "icon_servers": {
+    "type": "image",
+    "texture": "textures/ui_old/icon_servers",
+    "size": [ 11, 11 ]
+  },
+
+  "icon_notification": {
+    "type": "image",
+    "texture": "textures/ui_old/icon_notification",
+    "size": [ 11, 11 ]
+  },
+
+  "icon_import": {
+    "type": "image",
+    "texture": "textures/ui_old/icon_import",
+    "size": [ 11, 11 ]
+  },
+
+  "icon_lock": {
+    "type": "image",
+    "texture": "textures/ui_old/icon_lock",
+    "size": [ 11, 11 ]
+  },
+
+  /*///////////////////////////////////////////////////////////////////////////
+  //  Settings and World sections.
+  ///////////////////////////////////////////////////////////////////////////*/
+
+  "top_bar": {
+    "type": "image",
+    "texture": "textures/ui_old/top_bar"
+  },
+
+  "dialog_background": {
+    "type": "image",
+    "texture": "textures/ui_old/dialog_background"
+  },
+
+  "scroll_panel": {
+    "type": "image",
+    "size": [ "100%", "100%" ],
+    "texture": "textures/ui_old/scroll_panel"
+  },
+
+  "main_panel": {
+    "type": "image",
+    "size": [ "100%", "100%" ],
+    "texture": "textures/ui_old/main_panel"
+  },
+
+  "scroll_box": {
+    "type": "image",
+    "size": [ "100%", "100%" ],
+    "texture": "textures/ui_old/scroll_box"
+  },
+
+  "scroll_track": {
+    "type": "image",
+    "size": [ "100%", "100%" ],
+    "texture": "textures/ui_old/scroll_track"
+  },
+
+  "icon_settings_keyboard_and_mouse": {
+    "type": "image",
+    "size": [ 28, 28 ],
+    "texture": "textures/ui_old/icon_settings_keyboard_and_mouse"
+  },
+
+  "icon_settings_controller": {
+    "type": "image",
+    "size": [ 28, 28 ],
+    "texture": "textures/ui_old/icon_settings_controller"
+  },
+
+  "icon_settings_touch": {
+    "type": "image",
+    "size": [ 28, 28 ],
+    "texture": "textures/ui_old/icon_settings_touch"
+  },
+
+  "icon_settings_game": {
+    "type": "image",
+    "size": [ 28, 28 ],
+    "texture": "textures/ui_old/icon_settings_game"
+  },
+
+  "icon_settings_graphics": {
+    "type": "image",
+    "size": [ 28, 28 ],
+    "texture": "textures/ui_old/icon_settings_graphics"
+  },
+
+  "icon_settings_profile": {
+    "type": "image",
+    "size": [ 28, 28 ],
+    "texture": "textures/ui_old/icon_settings_profile"
+  },
+
+  "icon_settings_resource_packs": {
+    "type": "image",
+    "size": [ 28, 28 ],
+    "texture": "textures/ui_old/icon_settings_resource_packs"
+  },
+
+  "icon_settings_skins": {
+    "type": "image",
+    "size": [ 28, 28 ],
+    "texture": "textures/ui_old/icon_settings_skins"
+  },
+
+  "icon_settings_sounds": {
+    "type": "image",
+    "size": [ 28, 28 ],
+    "texture": "textures/ui_old/icon_settings_sounds"
+  },
+
+  "icon_game": {
+    "type": "image",
+    "texture": "textures/ui_old/icon_game",
+    "size": [ 11, 11 ]
+  },
+
+  "icon_advanced": {
+    "type": "image",
+    "texture": "textures/ui_old/icon_advanced",
+    "size": [ 11, 11 ]
+  },
+
+  "icon_resource": {
+    "type": "image",
+    "texture": "textures/ui_old/icon_resource",
+    "size": [ 11, 11 ]
+  },
+
+  "icon_behavior": {
+    "type": "image",
+    "texture": "textures/ui_old/icon_behavior",
+    "size": [ 11, 11 ]
+  },
+
+  "icon_about": {
+    "type": "image",
+    "texture": "textures/ui_old/icon_about",
+    "size": [ 11, 11 ]
+  },
+  
+  "icon_language": {
+    "type": "image",
+    "texture": "textures/ui_old/icon_language",
+    "size": [ 16, 16 ]
+  },
+
+  "right_arrow_icon": {
+    "type": "image",
+    "texture": "textures/ui_old/right_arrow_icon",
+    "size": [ 12, 12 ]
+  },
+
+  /*///////////////////////////////////////////////////////////////////////////
+  //  Inventory.
+  ///////////////////////////////////////////////////////////////////////////*/
+
+  "cell_image_normal": {
+    "type": "image",
+    "size": [ "100%", "100%" ],
+    "texture": "textures/ui_old/cell_image_normal"
+  },
+
+  "cell_image_normal_default": {
+    "type": "image",
+    "size": [ "100%", "100%" ],
+    "texture": "textures/ui_old/cell_image_normal_default"
+  },
+
+  "cell_image_recipe_default": {
+    "type": "image",
+    "texture": "textures/ui_old/cell_image_recipe_default"
+  },
+
+  "cell_image_recipe_default_red": {
+    "type": "image",
+    "texture": "textures/ui_old/cell_image_recipe_default_red"
+  },
+
+  "cell_image_recipe_group_head_collapsed": {
+    "type": "image",
+    "texture": "textures/ui_old/cell_image_recipe_group_head_collapsed"
+  },
+
+  "cell_image_recipe_group_head_expanded": {
+    "type": "image",
+    "texture": "textures/ui_old/cell_image_recipe_group_head_expanded"
+  },
+
+  "cell_image_recipe_group_item": {
+    "type": "image",
+    "texture": "textures/ui_old/cell_image_recipe_group_item"
+  },
+
+  "cell_image_recipe_selected": {
+    "type": "image",
+    "texture": "textures/ui_old/cell_image_recipe_selected"
+  },
+  
+  "hotbar_image_base": {
+    "type": "image",
+    "alpha": "$hotbar_alpha",
+    "$hotbar_alpha|default": 1.0
+  },
+
+  "hotbar_slot_start_cap@ui_old_textures.hotbar_image_base": {
+    "texture": "textures/ui/hotbar_start_cap",
+    "size": [ 1, 22 ]
+  },
+
+  "hotbar_slot_0@ui_old_textures.hotbar_image_base": {
+    "texture": "textures/ui/hotbar_0",
+    "size": [ 20, 22 ]
+  },
+
+  "hotbar_slot_1@ui_old_textures.hotbar_image_base": {
+    "texture": "textures/ui/hotbar_1",
+    "size": [ 20, 22 ]
+  },
+
+  "hotbar_slot_2@ui_old_textures.hotbar_image_base": {
+    "texture": "textures/ui/hotbar_2",
+    "size": [ 20, 22 ]
+  },
+
+  "hotbar_slot_3@ui_old_textures.hotbar_image_base": {
+    "texture": "textures/ui/hotbar_3",
+    "size": [ 20, 22 ]
+  },
+
+  "hotbar_slot_4@ui_old_textures.hotbar_image_base": {
+    "texture": "textures/ui/hotbar_4",
+    "size": [ 20, 22 ]
+  },
+
+  "hotbar_slot_5@ui_old_textures.hotbar_image_base": {
+    "texture": "textures/ui/hotbar_5",
+    "size": [ 20, 22 ]
+  },
+
+  "hotbar_slot_6@ui_old_textures.hotbar_image_base": {
+    "texture": "textures/ui/hotbar_6",
+    "size": [ 20, 22 ]
+  },
+
+  "hotbar_slot_7@ui_old_textures.hotbar_image_base": {
+    "texture": "textures/ui/hotbar_7",
+    "size": [ 20, 22 ]
+  },
+
+  "hotbar_slot_8@ui_old_textures.hotbar_image_base": {
+    "texture": "textures/ui/hotbar_8",
+    "size": [ 20, 22 ]
+  },
+
+  "hotbar_slot_end_cap@ui_old_textures.hotbar_image_base": {
+    "texture": "textures/ui/hotbar_end_cap",
+    "size": [ 1, 22 ]
+  },
+
+  "craft_toggle_off": {
+    "type": "image",
+    "size": [ 38, 19 ],
+    "texture": "textures/ui_old/craft_toggle_off"
+  },
+
+  "craft_toggle_off_hover": {
+    "type": "image",
+    "size": [ 38, 19 ],
+    "texture": "textures/ui_old/craft_toggle_off_hover"
+  },
+
+  "craft_toggle_on": {
+    "type": "image",
+    "size": [ 38, 19 ],
+    "texture": "textures/ui_old/craft_toggle_on"
+  },
+
+  "craft_toggle_on_hover": {
+    "type": "image",
+    "size": [ 38, 19 ],
+    "texture": "textures/ui_old/craft_toggle_on_hover"
+  },
+  
+  /*///////////////////////////////////////////////////////////////////////////
+  //  Vertical Tabs.
+  ///////////////////////////////////////////////////////////////////////////*/
+
+  /*Left*/
+
+  "TabLeftBack": {
+    "type": "image",
+    "texture": "textures/ui_old/TabLeftBack"
+  },
+
+  "TabLeftBackBottomMost": {
+    "type": "image",
+    "texture": "textures/ui_old/TabLeftBackBottomMost"
+  },
+
+  "TabLeftBackTopMost": {
+    "type": "image",
+    "texture": "textures/ui_old/TabLeftBackTopMost"
+  },
+
+  "TabLeftFront": {
+    "type": "image",
+    "texture": "textures/ui_old/TabLeftFront"
+  },
+
+  "TabLeftFrontBottomMost": {
+    "type": "image",
+    "texture": "textures/ui_old/TabLeftFrontBottomMost"
+  },
+
+  "TabLeftFrontTopMost": {
+    "type": "image",
+    "texture": "textures/ui_old/TabLeftFrontTopMost"
+  },
+
+  /*Right*/
+
+  "TabRightBack": {
+    "type": "image",
+    "texture": "textures/ui_old/TabRightBack"
+  },
+
+  "TabRightBackBottomMost": {
+    "type": "image",
+    "texture": "textures/ui_old/TabRightBackBottomMost"
+  },
+
+  "TabRightBackTopMost": {
+    "type": "image",
+    "texture": "textures/ui_old/TabRightBackTopMost"
+  },
+  
+  "TabRightFront": {
+    "type": "image",
+    "texture": "textures/ui_old/TabRightFront"
+  },
+
+  "TabRightFrontBottomMost": {
+    "type": "image",
+    "texture": "textures/ui_old/TabRightFrontBottomMost"
+  },
+
+  "TabRightFrontTopMost": {
+    "type": "image",
+    "texture": "textures/ui_old/TabRightFrontTopMost"
+  },
+
+  /*///////////////////////////////////////////////////////////////////////////
+  //  Brewing.
+  ///////////////////////////////////////////////////////////////////////////*/
+
+  "brewing_arrow_large_empty": {
+    "type": "image",
+    "size": [ 9, 41 ],
+    "texture": "textures/ui_old/brewing_arrow_large_empty"
+  },
+
+  "brewing_fuel_bar_empty": {
+    "type": "image",
+    "size": [ 24, 6 ],
+    "texture": "textures/ui_old/brewing_fuel_bar_empty"
+  },
+
+  "brewing_fuel_pipes": {
+    "type": "image",
+    "size": [ 30, 22 ],
+    "texture": "textures/ui_old/brewing_fuel_pipes"
+  },
+
+  "brewing_pipes_large": {
+    "type": "image",
+    "size": [ 66, 32 ],
+    "texture": "textures/ui_old/brewing_pipes_large"
+  },
+  
+  "bubbles_empty": {
+    "type": "image",
+    "size": [ 12, 30 ],
+    "texture": "textures/ui_old/bubbles_empty"
+  }
+
+  /*///////////////////////////////////////////////////////////////////////////
+  //  Others.
+  ///////////////////////////////////////////////////////////////////////////*/
+
+}

@@ -1,0 +1,274 @@
+{
+
+  "background_image@ui_old_textures.dialog_background": { },
+
+  "trade_item_slot": {
+    "type": "panel",
+    "size": [ 26, 26 ],
+    "$item_collection_name": "$trade_ingredient_collection",
+    "controls": [
+      {
+        "container_item@container_item_old.container_item": {
+          "size": [ 32, 32 ],
+          "$cell_image_size": [ 32, 32 ],
+          "$background_images": "ui_old_textures.cell_image_normal",
+          "anchor_to": "center",
+          "anchor_from": "center"
+        }
+      }
+    ]
+  },
+
+  "trade_item_slot_result_button@container_item_old.container_slot_button_prototype_deluxe": {
+    "button_mappings": [
+      {
+        "from_button_id": "button.menu_select",
+        "to_button_id": "button.trade_take_all_place_all",
+        "mapping_type": "pressed"
+      },
+      {
+        "from_button_id": "button.menu_ok",
+        "to_button_id": "button.trade_take_all_place_all",
+        "mapping_type": "pressed"
+      },
+      {
+        "from_button_id": "button.menu_secondary_select",
+        "to_button_id": "button.trade_take_all_place_all",
+        "mapping_type": "pressed"
+      },
+      {
+        "from_button_id": "button.controller_select",
+        "to_button_id": "button.trade_take_all_place_all",
+        "mapping_type": "pressed"
+      },
+      {
+        "from_button_id": "button.menu_auto_place",
+        "to_button_id": "button.container_auto_place",
+        "mapping_type": "pressed"
+      },
+      {
+        "from_button_id": "button.controller_secondary_select",
+        "to_button_id": "button.container_auto_place",
+        "mapping_type": "pressed"
+      },
+      {
+        "from_button_id": "button.menu_inventory_drop",
+        "to_button_id": "button.drop_one",
+        "mapping_type": "pressed"
+      },
+      {
+        "from_button_id": "button.menu_inventory_drop_all",
+        "to_button_id": "button.drop_all",
+        "mapping_type": "pressed"
+      },
+      {
+        "from_button_id": "button.menu_select",
+        "to_button_id": "button.trade_coalesce_stack",
+        "mapping_type": "double_pressed"
+      },
+      {
+        "from_button_id": "button.menu_ok",
+        "to_button_id": "button.trade_coalesce_stack",
+        "mapping_type": "double_pressed"
+      },
+      {
+        "to_button_id": "button.container_slot_hovered",
+        "mapping_type": "pressed"
+      }
+    ]
+  },
+
+  "result_item_panel": {
+    "type": "panel",
+    "size": [ 26, 26 ],
+    "$item_collection_name": "$recipe_collection",
+    "controls": [
+      {
+        "output_item_name@play_old.base_label": {
+          "type": "label",
+          "anchor_from": "top_middle",
+          "anchor_to": "bottom_middle",
+          "text": "#text",
+          "text_alignment": "center",
+          "size": [ "300%", "default" ],
+          "bindings": [
+            {
+              "binding_name": "#sell_item_name",
+              "binding_name_override": "#text",
+              "binding_type": "global",
+              "binding_condition": "visible"
+            }
+          ]
+        }
+      },
+      { "recipe_item_panel@trade.recipe_item_panel": {} }
+    ]
+  },
+
+  "cycle_recipe_button@common_old.old_main_button": {
+    "bindings": [
+      {
+        "binding_type": "global",
+        "binding_condition": "visible",
+        "binding_name": "$cycle_binding_name",
+        "binding_name_override": "#enabled"
+      },
+      {
+        "binding_name": "(not #is_using_gamepad)",
+        "binding_name_override": "#focus_enabled"
+      }
+    ]
+  },
+
+  "cycle_recipe_left_button@trade_pocket.cycle_recipe_button": {
+    "anchor_from": "left_middle",
+    "anchor_to": "left_middle",
+    "$cycle_binding_name": "#left_button_enabled",
+    "$chevron_image_name": "textures/ui/chevron_left",
+    "$pressed_button_name": "button.cycle_recipe_left",
+    "$direction_gamepad_button_helper": "gamepad_helper@common.gamepad_helper_left_bumper",
+    "button_mappings": [
+      {
+        "from_button_id": "button.menu_tab_left",
+        "to_button_id": "button.cycle_recipe_left",
+        "mapping_type": "global"
+      },
+      {
+        "from_button_id": "button.menu_select",
+        "to_button_id": "button.cycle_recipe_left",
+        "mapping_type": "pressed"
+      },
+      {
+        "from_button_id": "button.menu_ok",
+        "to_button_id": "button.cycle_recipe_left",
+        "mapping_type": "pressed"
+      }
+    ]
+  },
+
+  "cycle_recipe_right_button@trade_pocket.cycle_recipe_button": {
+    "anchor_from": "right_middle",
+    "anchor_to": "right_middle",
+    "$cycle_binding_name": "#right_button_enabled",
+    "$chevron_image_name": "textures/ui/chevron_right",
+    "$pressed_button_name": "button.cycle_recipe_right",
+    "$direction_gamepad_button_helper": "gamepad_helper@common.gamepad_helper_right_bumper",
+    "button_mappings": [
+      {
+        "from_button_id": "button.menu_tab_right",
+        "to_button_id": "button.cycle_recipe_right",
+        "mapping_type": "global"
+      },
+      {
+        "from_button_id": "button.menu_select",
+        "to_button_id": "button.cycle_recipe_right",
+        "mapping_type": "pressed"
+      },
+      {
+        "from_button_id": "button.menu_ok",
+        "to_button_id": "button.cycle_recipe_right",
+        "mapping_type": "pressed"
+      }
+    ]
+  },
+
+  "merchant_purchase_panel": {
+    "type": "panel",
+    "controls": [
+      {
+        "left@trade_pocket.cycle_recipe_left_button": {
+          "$button_text": "<",
+          "size": [ 30, 30 ]
+        }
+      },
+      { "purchase_grid@trade_pocket.purchase_grid": {} },
+      {
+        "right@trade_pocket.cycle_recipe_right_button": {
+          "$button_text": ">",
+          "size": [ 30, 30 ]
+        }
+      }
+    ]
+  },
+
+  "inventory_grid": {
+    "grid_item_template": "container_item_old.container_item_pocket"
+  },
+
+  "inventory_content": {
+    "controls": [
+      {
+        "scrolling_panel@common.scrolling_panel": {
+          "layer": 1,
+          "$scrolling_pane_size": [ "100%", "100%-2px" ],
+          "$scrolling_content": "trade_pocket.inventory_grid",
+
+          "$scroll_size": [ 12, "100%" ],
+          "$scroll_track_image_control": "ui_old_textures.scroll_track",
+          "$scroll_box_mouse_image_control": "ui_old_textures.scroll_box",
+          
+          "$scroll_background_image_control": "ui_old_textures.scroll_panel"
+        }
+      }
+    ]
+  },
+
+  "header": {
+    "controls": [
+      {
+        "top_bar@ui_old_textures.top_bar": {
+          "size": [ "100%", 28 ]
+        }
+      },
+      {
+        "close_button@common_old.close_button": {
+          "anchor_from": "top_right",
+          "anchor_to": "top_right"
+        }
+      },
+      {
+        "panel": {
+          "type": "panel",
+          "anchor_from": "center",
+          "anchor_to": "center",
+          "controls": [
+            {
+              "title_label@play_old.base_label": {
+                "text": "$villager_name",
+                "color": "$main_menu_button_default_color",
+                "layer": 1
+              }
+            }
+          ]
+        }
+      }
+    ]
+  },
+
+  "trade_panel": {
+    "controls": [
+      { "bg@background_image": { "layer": 1 } },
+      { "root_panel@common.root_panel": {} },
+      { "header@trade_pocket.header": { "layer": 2 } },
+      {
+        "inventory@trade_pocket.inventory_half_screen": {
+          "layer": 1
+        }
+      },
+      { "merchant_half_screen@trade_pocket.merchant_half_screen": { "layer": 8 } },
+
+      { "gamepad_helpers@common.container_gamepad_helpers": { "layer": 1 } },
+      { "container_gamepad_helpers@common.container_gamepad_helpers": { "layer": 2 } },
+      { "inventory_selected_icon_button@common_dx.inventory_selected_icon_button": {} },
+      { "flying_item_renderer@common.flying_item_renderer": {} },
+      { "selected_item_details_factory@common.selected_item_details_factory": {} }
+    ],
+    "button_mappings": [
+      {
+        "from_button_id": "button.menu_cancel",
+        "to_button_id": "button.menu_exit",
+        "mapping_type": "global"
+      }
+    ]
+  }
+}

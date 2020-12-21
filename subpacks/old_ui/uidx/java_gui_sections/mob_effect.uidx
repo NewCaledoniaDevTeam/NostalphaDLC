@@ -1,0 +1,116 @@
+{
+  "namespace": "mob_effect_java_dx",
+
+  "mob_effect_base": {
+    "type": "image",
+    "size": [ 18, 18 ]
+  },
+
+  "inventory_mob_effect_base@inventory_java_dx.inventory_base": {
+    "$uv_size": [ 18, 18 ]
+  },
+
+  /* From Inventory */
+
+  "absorption_icon@mob_effect_java_dx.inventory_mob_effect_base": {
+    "$uv": [ -36, -234 ]
+  },
+
+  "blindness_icon@mob_effect_java_dx.inventory_mob_effect_base": {
+    "$uv": [ -90, -216 ]
+  },
+
+  "fire_resistance_icon@mob_effect_java_dx.inventory_mob_effect_base": {
+    "$uv": [ -125, -216 ]
+  },
+
+  "haste_icon@mob_effect_java_dx.inventory_mob_effect_base": {
+    "$uv": [ -36, -198 ]
+  },
+
+  "hunger_icon@mob_effect_java_dx.inventory_mob_effect_base": {
+    "$uv": [ -18, -216 ]
+  },
+
+  "invisibility_icon@mob_effect_java_dx.inventory_mob_effect_base": {
+    "$uv": [ 0, -216 ]
+  },
+  
+  "jump_boost_icon@mob_effect_java_dx.inventory_mob_effect_base": {
+    "$uv": [ -36, -216 ]
+  },
+  
+  "mining_fatigue_icon@mob_effect_java_dx.inventory_mob_effect_base": {
+    "$uv": [ -54, -198 ]
+  },
+  
+  "nausea_icon@mob_effect_java_dx.inventory_mob_effect_base": {
+    "$uv": [ -54, -216 ]
+  },
+  
+  "night_vision_icon@mob_effect_java_dx.inventory_mob_effect_base": {
+    "$uv": [ -72, -216 ]
+  },
+  
+  "poison_icon@mob_effect_java_dx.inventory_mob_effect_base": {
+    "$uv": [ -107, -198 ]
+  },
+  
+  "regeneration_icon@mob_effect_java_dx.inventory_mob_effect_base": {
+    "$uv": [ -125, -198 ]
+  },
+  
+  "resistance_icon@mob_effect_java_dx.inventory_mob_effect_base": {
+    "$uv": [ -107, -216 ]
+  },
+  
+  "slowness_icon@mob_effect_java_dx.inventory_mob_effect_base": {
+    "$uv": [ -18, -198 ]
+  },
+
+  "speed_icon@mob_effect_java_dx.inventory_mob_effect_base": {
+    "$uv": [ 0, -198 ]
+  },
+  
+  "strength_icon@mob_effect_java_dx.inventory_mob_effect_base": {
+    "$uv": [ -72, -198 ]
+  },
+  
+  "water_breathing_icon@mob_effect_java_dx.inventory_mob_effect_base": {
+    "$uv": [ 0, 234 ]
+  },
+  
+  "weakness_icon@mob_effect_java_dx.inventory_mob_effect_base": {
+    "$uv": [ -90, -198 ]
+  },
+  
+  "wither_icon@mob_effect_java_dx.inventory_mob_effect_base": {
+    "$uv": [ -18, 234 ]
+  },
+
+  /* New Effects */
+
+  "bad_omen_icon@mob_effect_java_dx.mob_effect_base": {
+    "texture": "textures/ui/bad_omen_effect"
+  },
+
+  "conduit_power_icon@mob_effect_java_dx.mob_effect_base": {
+    "texture": "textures/ui/conduit_power_effect"
+  },
+
+  "health_boost_icon@mob_effect_java_dx.mob_effect_base": {
+    "texture": "textures/ui/health_boost_effect"
+  },
+
+  "hero_of_the_village_icon@mob_effect_java_dx.mob_effect_base": {
+    "texture": "textures/ui/village_hero_effect"
+  },
+  
+  "levitation_icon@mob_effect_java_dx.mob_effect_base": {
+    "texture": "textures/ui/levitation_effect"
+  },
+  
+  "slow_falling_icon@mob_effect_java_dx.mob_effect_base": {
+    "texture": "textures/ui/slow_falling_effect"
+  }
+}

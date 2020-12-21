@@ -1,0 +1,14 @@
+{
+  "play_screen@common.base_screen": {
+    "variables": [
+      {
+        "requires": "$desktop_screen",
+        "$screen_content": "play_deluxe.play_screen_content"
+      },
+      {
+        "requires": "$pocket_screen",
+        "$screen_content": "play_old.play_screen_content"
+      }
+    ]
+  }
+}

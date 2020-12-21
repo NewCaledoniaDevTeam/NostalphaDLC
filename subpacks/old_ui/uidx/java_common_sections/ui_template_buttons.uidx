@@ -1,0 +1,673 @@
+{
+  "namespace": "common_buttons_java",
+
+  /*///////////////////////////////////////////////////////////////////////////
+  //  Java Edtition Main menu buttons.
+  ///////////////////////////////////////////////////////////////////////////*/
+
+  "java_main_button_310@common.button": {
+    "size": [ 310, 20 ],
+    "locked_control": "locked",
+    "controls": [
+      { "default@common_buttons_java.main_menu_button_310_default": { } },
+      { "hover@common_buttons_java.main_menu_button_310_hover": { } },
+      { "pressed@common_buttons_java.main_menu_button_310_hover": { } },
+      { "locked@common_buttons_java.main_menu_button_310_locked": { } }
+    ]
+  },
+
+  "java_main_button_200@common.button": {
+    "size": [ 200, 20 ],
+    "locked_control": "locked",
+    "controls": [
+      { "default@common_buttons_java.main_menu_button_200_default": { } },
+      { "hover@common_buttons_java.main_menu_button_200_hover": { } },
+      { "pressed@common_buttons_java.main_menu_button_200_hover": { } },
+      { "locked@common_buttons_java.main_menu_button_200_locked": { } }
+    ]
+  },
+
+  "java_main_button_150@common.button": {
+    "size": [ 150, 20 ],
+    "locked_control": "locked",
+    "controls": [
+      { "default@common_buttons_java.main_menu_button_150_default": { } },
+      { "hover@common_buttons_java.main_menu_button_150_hover": { } },
+      { "pressed@common_buttons_java.main_menu_button_150_hover": { } },
+      { "locked@common_buttons_java.main_menu_button_150_locked": { } }
+    ]
+  },
+
+  "java_main_button_120@common.button": {
+    "size": [ 120, 20 ],
+    "locked_control": "locked",
+    "controls": [
+      { "default@common_buttons_java.main_menu_button_120_default": { } },
+      { "hover@common_buttons_java.main_menu_button_120_hover": { } },
+      { "pressed@common_buttons_java.main_menu_button_120_hover": { } },
+      { "locked@common_buttons_java.main_menu_button_120_locked": { } }
+    ]
+  },
+
+  "java_main_button_100@common.button": {
+    "size": [ 100, 20 ],
+    "locked_control": "locked",
+    "controls": [
+      { "default@common_buttons_java.main_menu_button_100_default": { } },
+      { "hover@common_buttons_java.main_menu_button_100_hover": { } },
+      { "pressed@common_buttons_java.main_menu_button_100_hover": { } },
+      { "locked@common_buttons_java.main_menu_button_100_locked": { } }
+    ]
+  },
+
+  "java_main_button_98@common.button": {
+    "size": [ 98, 20 ],
+    "locked_control": "locked",
+    "controls": [
+      { "default@common_buttons_java.main_menu_button_98_default": { } },
+      { "hover@common_buttons_java.main_menu_button_98_hover": { } },
+      { "pressed@common_buttons_java.main_menu_button_98_hover": { } },
+      { "locked@common_buttons_java.main_menu_button_98_locked": { } }
+    ]
+  },
+
+  "java_main_button_88@common.button": {
+    "size": [ 88, 20 ],
+    "locked_control": "locked",
+    "controls": [
+      { "default@common_buttons_java.main_menu_button_88_default": { } },
+      { "hover@common_buttons_java.main_menu_button_88_hover": { } },
+      { "pressed@common_buttons_java.main_menu_button_88_hover": { } },
+      { "locked@common_buttons_java.main_menu_button_88_locked": { } }
+    ]
+  },
+
+  "java_main_button_74@common.button": {
+    "size": [ 74, 20 ],
+    "locked_control": "locked",
+    "controls": [
+      { "default@common_buttons_java.main_menu_button_74_default": { } },
+      { "hover@common_buttons_java.main_menu_button_74_hover": { } },
+      { "pressed@common_buttons_java.main_menu_button_74_hover": { } },
+      { "locked@common_buttons_java.main_menu_button_74_locked": { } }
+    ]
+  },
+
+  "java_main_button_72@common.button": {
+    "size": [ 72, 20 ],
+    "locked_control": "locked",
+    "controls": [
+      { "default@common_buttons_java.main_menu_button_72_default": { } },
+      { "hover@common_buttons_java.main_menu_button_72_hover": { } },
+      { "pressed@common_buttons_java.main_menu_button_72_hover": { } },
+      { "locked@common_buttons_java.main_menu_button_72_locked": { } }
+    ]
+  },
+
+  "java_main_button_50@common.button": {
+    "size": [ 50, 20 ],
+    "locked_control": "locked",
+    "controls": [
+      { "default@common_buttons_java.main_menu_button_50_default": { } },
+      { "hover@common_buttons_java.main_menu_button_50_hover": { } },
+      { "pressed@common_buttons_java.main_menu_button_50_hover": { } },
+      { "locked@common_buttons_java.main_menu_button_50_locked": { } }
+    ]
+  },
+
+  "java_main_button_49@common.button": {
+    "size": [ 49, 20 ],
+    "locked_control": "locked",
+    "controls": [
+      { "default@common_buttons_java.main_menu_button_49_default": { } },
+      { "hover@common_buttons_java.main_menu_button_49_hover": { } },
+      { "pressed@common_buttons_java.main_menu_button_49_hover": { } },
+      { "locked@common_buttons_java.main_menu_button_49_locked": { } }
+    ]
+  },
+
+  "java_main_button_20@common.button": {
+    "size": [ 20, 20 ],
+    "locked_control": "locked",
+    "controls": [
+      { "default@common_buttons_java.main_menu_button_20_default": { } },
+      { "hover@common_buttons_java.main_menu_button_20_hover": { } },
+      { "pressed@common_buttons_java.main_menu_button_20_hover": { } },
+      { "locked@common_buttons_java.main_menu_button_20_locked": { } }
+    ]
+  },
+
+  /*///////////////////////////////////////////////////////////////////////////
+  //  Buttons assets.
+  ///////////////////////////////////////////////////////////////////////////*/
+
+  "button_label": {
+    "type": "label",
+    "layer": 2,
+    "text": "$button_text",
+    "$button_text|default": "",
+    "shadow": true,
+    "color": "$text_color",
+    "size": [ "default", "default" ],
+    "max_size": [ "100% - 2px", "100% - 4px" ],
+    "$button_text_binding_type|default": "none",
+    "$button_binding_condition|default": "none",
+    "$button_text_grid_collection_name|default": "",
+    "bindings": [
+      {
+        "binding_type": "$button_text_binding_type",
+        "binding_condition": "$button_binding_condition",
+        "binding_collection_name": "$button_text_grid_collection_name",
+        "binding_name": "$button_text",
+        "binding_name_override": "$button_text"
+      }
+    ]
+  },
+
+  "button_label_for_options": {
+    "type": "label",
+    "layer": 2,
+    "text": "$option_label",
+    "shadow": true,
+    "color": "$text_color",
+    "size": [ "default", "default" ]
+  },
+
+  "button_panel": {
+    "type": "panel",
+    "clips_children": true,
+    "$button_image|default": "",
+    "$button_image_size|default": "",
+    "$button_panel_content|default": "",
+    "controls": [
+      { "button_image@$button_image": { "layer": 1, "size": "$button_image_size" } },
+      { "button_content@$button_panel_content": { "layer": 2 } }
+    ]
+  },
+
+  "button_join_panel": {
+    "type": "panel",
+    "clips_children": true,
+    "anchor_from": "top_left",
+    "anchor_to": "top_left",
+    "size": "$button_image_size",
+    "$button_image_left|default": "",
+    "$button_image_right|default": "",
+    "$button_image_side_size|default": "",
+    "$button_image_side_right_size|default": "$button_image_side_size",
+    "controls": [
+      { "button_image_left@$button_image_left": { "size": "$button_image_side_size", "anchor_from": "top_left", "anchor_to": "top_left" } },
+      { "button_image_right@$button_image_right": { "size": "$button_image_side_right_size", "anchor_from": "top_right", "anchor_to": "top_right" } }
+    ]
+  },
+
+  "button_label_dropdown_binding@common_buttons_java.button_label_for_options": {
+    "color": "$text_color",
+    "text": "$button_text_binding",
+    "bindings": [
+      {
+        "binding_name": "$button_text_binding",
+        "binding_condition": "none"
+      },
+      {
+        "binding_name": "$text_color",
+        "binding_type": "$options_dropdown_label_color_binding_type",
+        "binding_name_override": "#color"
+      }
+    ]
+  },
+
+  "down_arrow_icon": {
+    "type": "image",
+    "layer": 2,
+    "size": [ 12, 12 ],
+    "offset": [ 0, 1 ],
+    "color": "$text_color",
+    "texture": "textures/uidx/down_arrow_icon"
+  },
+
+  "left_arrow_icon": {
+    "type": "image",
+    "layer": 2,
+    "size": [ 12, 12 ],
+    "offset": [ 0, 0 ],
+    "color": "$text_color",
+    "texture": "textures/uidx/left_arrow_icon"
+  },
+
+  "right_arrow_icon": {
+    "type": "image",
+    "layer": 2,
+    "size": [ 12, 12 ],
+    "offset": [ 0, 0 ],
+    "color": "$text_color",
+    "texture": "textures/uidx/right_arrow_icon"
+  },
+
+  "reset_icon": {
+    "type": "image",
+    "layer": 2,
+    "size": [ 12, 12 ],
+    "offset": [ 0, 0 ],
+    "color": "$text_color",
+    "texture": "textures/uidx/reset_icon"
+  },
+
+  "button_label_dropdown": {
+    "type": "stack_panel",
+    "orientation": "horizontal",
+    "anchor_from": "center",
+    "anchor_to": "center",
+    "size": [ "100%c", "100% - 9px" ],
+    //"max_size": [ "100% - 4px", "100% - 9px" ],
+    "$only_bindings|default": false,
+    "layer": 2,
+    "controls": [
+      { "button_label@common_buttons_java.button_label_for_options": { "ignored": "$only_bindings" } },
+      {
+        "separator@common_buttons_java.button_label_for_options": {
+          "ignored": "$only_bindings",
+          "text": ": "
+        }
+      },
+      { "button_label_content_name@common_buttons_java.button_label_dropdown_binding": { } },
+      {
+        "button_panel": {
+          "type": "panel",
+          "size": [ 12, 8 ],
+          "controls": [
+            { "down_arrow_icon@common_buttons_java.down_arrow_icon": { } }
+          ]
+        }
+      }
+    ]
+  },
+
+  "button_label_toggle": {
+    "type": "stack_panel",
+    "orientation": "horizontal",
+    "anchor_from": "center",
+    "anchor_to": "center",
+    "size": [ "100%c", "100% - 9px" ],
+    //"max_size": [ "100% - 4px", "100% - 9px" ],
+    "$ignore_separator|default": false,
+    "$off_text|default": "options.off",
+    "$on_text|default": "options.on",
+    "$is_on|default": false,
+    "layer": 2,
+    "controls": [
+      { "button_label@common_buttons_java.button_label_for_options": { } },
+      {
+        "separator@common_buttons_java.button_label_for_options": {
+          "ignored": "$ignore_separator",
+          "text": ": "
+        }
+      },
+      {
+        "separator_alt@common_buttons_java.button_label_for_options": {
+          "ignored": "(not $ignore_separator)",
+          "text": " "
+        }
+      },
+      {
+        "off_labeel@common_buttons_java.button_label_for_options": {
+          "ignored": "$is_on",
+          "text": "$off_text"
+        }
+      },
+      {
+        "on_label@common_buttons_java.button_label_for_options": {
+          "ignored": "(not $is_on)",
+          "text": "$on_text"
+        }
+      }
+    ]
+  },
+
+  /* Button 310x20 */
+
+  "main_menu_button_310_default@common_buttons_java.button_panel": {
+    "size": [ 310, 20 ],
+    "$button_image": "common_buttons_java.button_join_panel",
+    "$button_image_left": "widgets_java.main_menu_button_310_default_left",
+    "$button_image_right": "widgets_java.main_menu_button_310_default_right",
+    "$button_image_size": [ 310, 20 ],
+    "$button_image_side_size": [ 155, 20 ],
+    "$button_panel_content|default": "common_buttons_java.button_label",
+    "$text_color|default": "$main_menu_button_default_color"
+  },
+
+  "main_menu_button_310_hover@common_buttons_java.main_menu_button_310_default": {
+    "size": [ 310, 20 ],
+    "$button_image_left": "widgets_java.main_menu_button_310_hover_left",
+    "$button_image_right": "widgets_java.main_menu_button_310_hover_right",
+    "$text_color|default": "$main_menu_button_hover_color"
+  },
+
+  "main_menu_button_310_locked@common_buttons_java.main_menu_button_310_default": {
+    "size": [ 310, 20 ],
+    "$button_image_left": "widgets_java.main_menu_button_310_locked_left",
+    "$button_image_right": "widgets_java.main_menu_button_310_locked_right",
+    "$text_color|default": "$main_menu_button_locked_color"
+  },
+
+  /* Button 200x20 */
+  
+  "main_menu_button_200_default@common_buttons_java.button_panel": {
+    "size": [ 200, 20 ],
+    "$button_image": "widgets_java.main_menu_button_200_default",
+    "$button_image_size": [ 200, 20 ],
+    "$button_panel_content|default": "common_buttons_java.button_label",
+    "$text_color|default": "$main_menu_button_default_color"
+  },
+
+  "main_menu_button_200_hover@common_buttons_java.main_menu_button_200_default": {
+    "size": [ 200, 20 ],
+    "$button_image": "widgets_java.main_menu_button_200_hover",
+    "$text_color|default": "$main_menu_button_hover_color"
+  },
+
+  "main_menu_button_200_locked@common_buttons_java.main_menu_button_200_default": {
+    "size": [ 200, 20 ],
+    "$button_image": "widgets_java.main_menu_button_200_locked",
+    "$text_color|default": "$main_menu_button_locked_color"
+  },
+
+  /* Button 150x20 */
+
+  "main_menu_button_150_default@common_buttons_java.button_panel": {
+    "size": [ 150, 20 ],
+    "$button_image": "common_buttons_java.button_join_panel",
+    "$button_image_left": "widgets_java.main_menu_button_150_default_left",
+    "$button_image_right": "widgets_java.main_menu_button_150_default_right",
+    "$button_image_size": [ 150, 20 ],
+    "$button_image_side_size": [ 75, 20 ],
+    "$button_panel_content|default": "common_buttons_java.button_label",
+    "$text_color|default": "$main_menu_button_default_color"
+  },
+
+  "main_menu_button_150_hover@common_buttons_java.main_menu_button_150_default": {
+    "size": [ 150, 20 ],
+    "$button_image_left": "widgets_java.main_menu_button_150_hover_left",
+    "$button_image_right": "widgets_java.main_menu_button_150_hover_right",
+    "$text_color|default": "$main_menu_button_hover_color"
+  },
+
+  "main_menu_button_150_locked@common_buttons_java.main_menu_button_150_default": {
+    "size": [ 150, 20 ],
+    "$button_image_left": "widgets_java.main_menu_button_150_locked_left",
+    "$button_image_right": "widgets_java.main_menu_button_150_locked_right",
+    "$text_color|default": "$main_menu_button_locked_color"
+  },
+
+  /* Button 120x20 */
+
+  "main_menu_button_120_default@common_buttons_java.button_panel": {
+    "size": [ 120, 20 ],
+    "$button_image": "common_buttons_java.button_join_panel",
+    "$button_image_left": "widgets_java.main_menu_button_120_default_left",
+    "$button_image_right": "widgets_java.main_menu_button_120_default_right",
+    "$button_image_size": [ 120, 20 ],
+    "$button_image_side_size": [ 60, 20 ],
+    "$button_panel_content|default": "common_buttons_java.button_label",
+    "$text_color|default": "$main_menu_button_default_color"
+  },
+
+  "main_menu_button_120_hover@common_buttons_java.main_menu_button_120_default": {
+    "size": [ 120, 20 ],
+    "$button_image_left": "widgets_java.main_menu_button_120_hover_left",
+    "$button_image_right": "widgets_java.main_menu_button_120_hover_right",
+    "$text_color|default": "$main_menu_button_hover_color"
+  },
+
+  "main_menu_button_120_locked@common_buttons_java.main_menu_button_120_default": {
+    "size": [ 120, 20 ],
+    "$button_image_left": "widgets_java.main_menu_button_120_locked_left",
+    "$button_image_right": "widgets_java.main_menu_button_120_locked_right",
+    "$text_color|default": "$main_menu_button_locked_color"
+  },
+
+  /* Button 100x20 */
+
+  "main_menu_button_100_default@common_buttons_java.button_panel": {
+    "size": [ 100, 20 ],
+    "$button_image": "common_buttons_java.button_join_panel",
+    "$button_image_left": "widgets_java.main_menu_button_100_default_left",
+    "$button_image_right": "widgets_java.main_menu_button_100_default_right",
+    "$button_image_size": [ 100, 20 ],
+    "$button_image_side_size": [ 50, 20 ],
+    "$button_panel_content|default": "common_buttons_java.button_label",
+    "$text_color|default": "$main_menu_button_default_color"
+  },
+
+  "main_menu_button_100_hover@common_buttons_java.main_menu_button_100_default": {
+    "size": [ 100, 20 ],
+    "$button_image_left": "widgets_java.main_menu_button_100_hover_left",
+    "$button_image_right": "widgets_java.main_menu_button_100_hover_right",
+    "$text_color|default": "$main_menu_button_hover_color"
+  },
+
+  "main_menu_button_100_locked@common_buttons_java.main_menu_button_100_default": {
+    "size": [ 100, 20 ],
+    "$button_image_left": "widgets_java.main_menu_button_100_locked_left",
+    "$button_image_right": "widgets_java.main_menu_button_100_locked_right",
+    "$text_color|default": "$main_menu_button_locked_color"
+  },
+
+  /* Button 98x20 */
+
+  "main_menu_button_98_default@common_buttons_java.button_panel": {
+    "size": [ 98, 20 ],
+    "$button_image": "common_buttons_java.button_join_panel",
+    "$button_image_left": "widgets_java.main_menu_button_98_default_left",
+    "$button_image_right": "widgets_java.main_menu_button_98_default_right",
+    "$button_image_size": [ 98, 20 ],
+    "$button_image_side_size": [ 49, 20 ],
+    "$button_panel_content|default": "common_buttons_java.button_label",
+    "$text_color|default": "$main_menu_button_default_color"
+  },
+
+  "main_menu_button_98_hover@common_buttons_java.main_menu_button_98_default": {
+    "size": [ 98, 20 ],
+    "$button_image_left": "widgets_java.main_menu_button_98_hover_left",
+    "$button_image_right": "widgets_java.main_menu_button_98_hover_right",
+    "$text_color|default": "$main_menu_button_hover_color"
+  },
+
+  "main_menu_button_98_locked@common_buttons_java.main_menu_button_98_default": {
+    "size": [ 98, 20 ],
+    "$button_image_left": "widgets_java.main_menu_button_98_locked_left",
+    "$button_image_right": "widgets_java.main_menu_button_98_locked_right",
+    "$text_color|default": "$main_menu_button_locked_color"
+  },
+
+  /* Button 88x20 */
+
+  "main_menu_button_88_default@common_buttons_java.button_panel": {
+    "size": [ 88, 20 ],
+    "$button_image": "common_buttons_java.button_join_panel",
+    "$button_image_left": "widgets_java.main_menu_button_88_default_left",
+    "$button_image_right": "widgets_java.main_menu_button_88_default_right",
+    "$button_image_size": [ 88, 20 ],
+    "$button_image_side_size": [ 44, 20 ],
+    "$button_panel_content|default": "common_buttons_java.button_label",
+    "$text_color|default": "$main_menu_button_default_color"
+  },
+
+  "main_menu_button_88_hover@common_buttons_java.main_menu_button_88_default": {
+    "size": [ 88, 20 ],
+    "$button_image_left": "widgets_java.main_menu_button_88_hover_left",
+    "$button_image_right": "widgets_java.main_menu_button_88_hover_right",
+    "$text_color|default": "$main_menu_button_hover_color"
+  },
+
+  "main_menu_button_88_locked@common_buttons_java.main_menu_button_88_default": {
+    "size": [ 88, 20 ],
+    "$button_image_left": "widgets_java.main_menu_button_88_locked_left",
+    "$button_image_right": "widgets_java.main_menu_button_88_locked_right",
+    "$text_color|default": "$main_menu_button_locked_color"
+  },
+
+  /* Button 74x20 */
+
+  "main_menu_button_74_default@common_buttons_java.button_panel": {
+    "size": [ 74, 20 ],
+    "$button_image": "common_buttons_java.button_join_panel",
+    "$button_image_left": "widgets_java.main_menu_button_74_default_left",
+    "$button_image_right": "widgets_java.main_menu_button_74_default_right",
+    "$button_image_size": [ 74, 20 ],
+    "$button_image_side_size": [ 37, 20 ],
+    "$button_panel_content|default": "common_buttons_java.button_label",
+    "$text_color|default": "$main_menu_button_default_color"
+  },
+
+  "main_menu_button_74_hover@common_buttons_java.main_menu_button_74_default": {
+    "size": [ 74, 20 ],
+    "$button_image_left": "widgets_java.main_menu_button_74_hover_left",
+    "$button_image_right": "widgets_java.main_menu_button_74_hover_right",
+    "$text_color|default": "$main_menu_button_hover_color"
+  },
+
+  "main_menu_button_74_locked@common_buttons_java.main_menu_button_74_default": {
+    "size": [ 74, 20 ],
+    "$button_image_left": "widgets_java.main_menu_button_74_locked_left",
+    "$button_image_right": "widgets_java.main_menu_button_74_locked_right",
+    "$text_color|default": "$main_menu_button_locked_color"
+  },
+
+  /* Button 72x20 */
+
+  "main_menu_button_72_default@common_buttons_java.button_panel": {
+    "size": [ 72, 20 ],
+    "$button_image": "common_buttons_java.button_join_panel",
+    "$button_image_left": "widgets_java.main_menu_button_72_default_left",
+    "$button_image_right": "widgets_java.main_menu_button_72_default_right",
+    "$button_image_size": [ 72, 20 ],
+    "$button_image_side_size": [ 36, 20 ],
+    "$button_panel_content|default": "common_buttons_java.button_label",
+    "$text_color|default": "$main_menu_button_default_color"
+  },
+
+  "main_menu_button_72_hover@common_buttons_java.main_menu_button_72_default": {
+    "size": [ 72, 20 ],
+    "$button_image_left": "widgets_java.main_menu_button_72_hover_left",
+    "$button_image_right": "widgets_java.main_menu_button_72_hover_right",
+    "$text_color|default": "$main_menu_button_hover_color"
+  },
+
+  "main_menu_button_72_locked@common_buttons_java.main_menu_button_72_default": {
+    "size": [ 72, 20 ],
+    "$button_image_left": "widgets_java.main_menu_button_72_locked_left",
+    "$button_image_right": "widgets_java.main_menu_button_72_locked_right",
+    "$text_color|default": "$main_menu_button_locked_color"
+  },
+
+  /* Button 50x20 */
+
+  "main_menu_button_50_default@common_buttons_java.button_panel": {
+    "size": [ 50, 20 ],
+    "$button_image": "common_buttons_java.button_join_panel",
+    "$button_image_left": "widgets_java.main_menu_button_50_default_left",
+    "$button_image_right": "widgets_java.main_menu_button_50_default_right",
+    "$button_image_size": [ 50, 20 ],
+    "$button_image_side_size": [ 25, 20 ],
+    "$button_panel_content|default": "common_buttons_java.button_label",
+    "$text_color|default": "$main_menu_button_default_color"
+  },
+
+  "main_menu_button_50_hover@common_buttons_java.main_menu_button_50_default": {
+    "size": [ 50, 20 ],
+    "$button_image_left": "widgets_java.main_menu_button_50_hover_left",
+    "$button_image_right": "widgets_java.main_menu_button_50_hover_right",
+    "$text_color|default": "$main_menu_button_hover_color"
+  },
+
+  "main_menu_button_50_locked@common_buttons_java.main_menu_button_50_default": {
+    "size": [ 50, 20 ],
+    "$button_image_left": "widgets_java.main_menu_button_50_locked_left",
+    "$button_image_right": "widgets_java.main_menu_button_50_locked_right",
+    "$text_color|default": "$main_menu_button_locked_color"
+  },
+
+  /* Button 49x20 */
+
+  "main_menu_button_49_default@common_buttons_java.button_panel": {
+    "size": [ 49, 20 ],
+    "$button_image": "common_buttons_java.button_join_panel",
+    "$button_image_left": "widgets_java.main_menu_button_49_default_left",
+    "$button_image_right": "widgets_java.main_menu_button_49_default_right",
+    "$button_image_size": [ 49, 20 ],
+    "$button_image_side_size": [ 25, 20 ],
+    "$button_image_side_right_size": [ 24, 20 ],
+    "$button_panel_content|default": "common_buttons_java.button_label",
+    "$text_color|default": "$main_menu_button_default_color"
+  },
+
+  "main_menu_button_49_hover@common_buttons_java.main_menu_button_49_default": {
+    "size": [ 49, 20 ],
+    "$button_image_left": "widgets_java.main_menu_button_49_hover_left",
+    "$button_image_right": "widgets_java.main_menu_button_49_hover_right",
+    "$text_color|default": "$main_menu_button_hover_color"
+  },
+
+  "main_menu_button_49_locked@common_buttons_java.main_menu_button_49_default": {
+    "size": [ 49, 20 ],
+    "$button_image_left": "widgets_java.main_menu_button_49_locked_left",
+    "$button_image_right": "widgets_java.main_menu_button_49_locked_right",
+    "$text_color|default": "$main_menu_button_locked_color"
+  },
+
+  /* Button 20x20 */
+
+  "main_menu_button_20_default@common_buttons_java.button_panel": {
+    "size": [ 20, 20 ],
+    "$button_image": "common_buttons_java.button_join_panel",
+    "$button_image_left": "widgets_java.main_menu_button_20_default_left",
+    "$button_image_right": "widgets_java.main_menu_button_20_default_right",
+    "$button_image_size": [ 20, 20 ],
+    "$button_image_side_size": [ 10, 20 ],
+    "$button_panel_content|default": "common_buttons_java.button_label",
+    "$text_color|default": "$main_menu_button_default_color"
+  },
+
+  "main_menu_button_20_hover@common_buttons_java.main_menu_button_20_default": {
+    "size": [ 20, 20 ],
+    "$button_image_left": "widgets_java.main_menu_button_20_hover_left",
+    "$button_image_right": "widgets_java.main_menu_button_20_hover_right",
+    "$text_color|default": "$main_menu_button_hover_color"
+  },
+
+  "main_menu_button_20_locked@common_buttons_java.main_menu_button_20_default": {
+    "size": [ 20, 20 ],
+    "$button_image_left": "widgets_java.main_menu_button_20_locked_left",
+    "$button_image_right": "widgets_java.main_menu_button_20_locked_right",
+    "$text_color|default": "$main_menu_button_locked_color"
+  },
+
+  /* Button 8x20 (Slider box) */
+
+  "main_menu_button_8_default@common_buttons_java.button_panel": {
+    "size": [ 8, 20 ],
+    "$button_image": "common_buttons_java.button_join_panel",
+    "$button_image_left": "widgets_java.main_menu_button_8_default_left",
+    "$button_image_right": "widgets_java.main_menu_button_8_default_right",
+    "$button_image_size": [ 8, 20 ],
+    "$button_image_side_size": [ 4, 20 ],
+    "$button_panel_content|default": "common_buttons_java.button_label",
+    "$text_color|default": "$main_menu_button_default_color"
+  },
+
+  "main_menu_button_8_hover@common_buttons_java.main_menu_button_8_default": {
+    "size": [ 8, 20 ],
+    "$button_image_left": "widgets_java.main_menu_button_8_hover_left",
+    "$button_image_right": "widgets_java.main_menu_button_8_hover_right",
+    "$text_color|default": "$main_menu_button_hover_color"
+  },
+
+  "main_menu_button_8_locked@common_buttons_java.main_menu_button_8_default": {
+    "size": [ 8, 20 ],
+    "$button_image_left": "widgets_java.main_menu_button_8_locked_left",
+    "$button_image_right": "widgets_java.main_menu_button_8_locked_right",
+    "$text_color|default": "$main_menu_button_locked_color"
+  }
+}

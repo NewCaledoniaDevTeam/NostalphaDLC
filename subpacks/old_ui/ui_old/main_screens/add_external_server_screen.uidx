@@ -1,0 +1,276 @@
+{
+  "namespace": "add_external_server_old",
+
+  "save_button@common_old.old_main_button": {
+    "anchor_from": "top_middle",
+    "anchor_to": "top_middle",
+    "layer": 2,
+    "size": [ 91, 26 ],
+    "$pressed_button_name": "button.save_button",
+    "$button_text": "addExternalServerScreen.saveButtonLabel",
+    "bindings": [
+      {
+        "binding_name": "#save_button_enabled",
+        "binding_name_override": "#visible"
+      },
+      {
+        "binding_name": "#save_button_enabled",
+        "binding_name_override": "#enabled"
+      }
+    ]
+  },
+
+  "save_disabled_button@common_old.main_button_locked": {
+    "anchor_from": "top_middle",
+    "anchor_to": "top_middle",
+    "size": [ 91, 26 ],
+    "$text_color": "$main_menu_button_locked_color",
+    "$button_content": "common_old.button_label",
+    "$button_text": "addExternalServerScreen.saveButtonLabel",
+    "layer": 1,
+    "bindings": [
+      {
+        "binding_name": "#save_button_disabled",
+        "binding_name_override": "#visible"
+      },
+      {
+        "binding_name": "#save_button_enabled",
+        "binding_name_override": "#enabled"
+      }
+    ]
+  },
+
+  "play_button@common_old.old_main_button": {
+    "anchor_from": "top_right",
+    "anchor_to": "top_right",
+    "layer": 2,
+    "size": [ 47, 18 ],
+    "$pressed_button_name": "button.play_button",
+    "$button_text": "addExternalServerScreen.playButtonLabel",
+    "ignored": "$edit_mode",
+    "bindings": [
+      {
+        "binding_name": "#play_button_enabled",
+        "binding_name_override": "#enabled"
+      }
+    ]
+  },
+
+  "play_disabled_button@common_old.main_button_locked": {
+    "anchor_from": "top_right",
+    "anchor_to": "top_right",
+    "size": [ 47, 18 ],
+    "$text_color": "$main_menu_button_locked_color",
+    "$button_content": "common_old.button_label",
+    "$button_text": "addExternalServerScreen.playButtonLabel",
+    "layer": 1,
+    "bindings": [
+      {
+        "binding_name": "#play_button_disabled",
+        "binding_name_override": "#visible"
+      },
+      {
+        "binding_name": "#play_button_enabled",
+        "binding_name_override": "#enabled"
+      }
+    ]
+  },
+
+  "text_edit_group": {
+    "type": "panel",
+    "anchor_from": "top_right",
+    "anchor_to": "top_right",
+    "size": [ "100%", 31 ],
+    "$max_length|default": 30,
+    "$text_type|default": "ExtendedASCII",
+    "controls": [
+      {
+        "name_label@play_old.base_label": {
+          "anchor_from": "top_left",
+          "anchor_to": "top_left",
+          "layer": 1,
+          "size": [ "100%", "10px" ],
+          "text": "$header"
+        }
+      },
+      {
+        "edit_box@common.text_edit_box": {
+          "layer": 2,
+          "$text_background_default": "ui_old_textures.text_input",
+          "$text_background_hover": "ui_old_textures.text_input_hover",
+          "anchor_from": "bottom_left",
+          "anchor_to": "bottom_left",
+          "size": [ "100%", 18 ],
+          "$text_box_name": "$text_box_name",
+          "$text_edit_box_content_binding_name": "$content_binding_name",
+          "max_length": "$max_length",
+          "text_type": "$text_type",
+          "$place_holder_text": "$placeholder_label",
+          "$text_edit_box_binding_condition": "once"
+        }
+      }
+    ]
+  },
+
+  "left_stack_panel": {
+    "type": "stack_panel",
+    "anchor_from": "top_right",
+    "anchor_to": "top_right",
+    "size": [ "100%-5px", "100%" ],
+    "controls": [
+      { "fill_panel_0": { "type": "panel", "size": [ 1, 4 ] } },
+      {
+        "name_edit@add_external_server_old.text_edit_group": {
+          "$header": "addExternalServerScreen.nameTextBoxLabel",
+          "$placeholder_label": "addExternalServerScreen.namePlaceholder",
+          "$text_box_name": "#name_text_box",
+          "$max_length": 16,
+          "$content_binding_name": "#name_text_box_content"
+        }
+      },
+      { "fill_panel_1": { "type": "panel", "size": [ 1, 5 ] } },
+      {
+        "ip_edit@add_external_server_old.text_edit_group": {
+          "$header": "addExternalServerScreen.ipTextBoxLabel",
+          "$placeholder_label": "addExternalServerScreen.ipPlaceholder",
+          "$text_box_name": "#ip_text_box",
+          "$max_length": 256,
+          "$content_binding_name": "#ip_text_box_content"
+        }
+      },
+      { "fill_panel_2": { "type": "panel", "size": [ 1, 5 ] } },
+      {
+        "port_edit@add_external_server_old.text_edit_group": {
+          "$header": "addExternalServerScreen.portTextBoxLabel",
+          "$placeholder_label": "",
+          "$max_length": 6,
+          "$text_type": "NumberChars",
+          "$text_box_name": "#port_text_box",
+          "$content_binding_name": "#port_text_box_content"
+        }
+      },
+      { "fill_panel_3": { "type": "panel", "size": [ 1, "fill" ] } }
+    ]
+  },
+
+  "left_panel":{
+    "type": "panel",
+    "anchor_from": "top_left",
+    "anchor_to": "top_left",
+    "size": [ "50%", "100%" ],
+    "controls": [
+      { "left_stack_panel@add_external_server_old.left_stack_panel": { } }
+    ]
+  },
+
+  "right_panel": {
+    "type": "panel",
+    "anchor_from": "top_right",
+    "anchor_to": "top_right",
+    "size": [ "50%", "100%" ],
+    "controls": [
+      {
+        "desc_label@play_old.base_label": {
+          "anchor_from": "top_middle",
+          "anchor_to": "top_middle",
+          "layer": 1,
+          "offset": [ 0, 4 ],
+          "size": [ "100%-20px", "32px" ],
+          "text": "externalServerScreen.label"
+        }
+      },
+      {
+        "save_button@add_external_server_old.save_button": {
+          "offset": [ 0, 55 ]
+        }
+      },
+      {
+        "save_disabled_button@add_external_server_old.save_disabled_button": {
+          "offset": [ 0, 55 ]
+        }
+      }
+    ]
+  },
+
+  /*///////////////////////////////////////////////////////////////////////////
+  //  Panels.
+  ///////////////////////////////////////////////////////////////////////////*/
+
+  "top_bar": {
+    "type": "panel",
+    "controls": [
+      {
+        "back_button@common_old.back_button": {
+          "anchor_from": "top_left",
+          "anchor_to": "top_left",
+          "offset": [ 4, 4 ]
+        }
+      },
+      {
+        "title_text@play_old.base_label": {
+          "anchor_from": "center",
+          "anchor_to": "center",
+          "text": "#title_text",
+          "bindings": [
+            {
+              "binding_name": "#title_text",
+              "binding_condition": "once"
+            }
+          ]
+        }
+      },
+      {
+        "remove_button@common_old.old_main_button": {
+          "$button_content": "common_old.button_label_remove",
+          "anchor_from": "top_right",
+          "anchor_to": "top_right",
+          "offset": [ -4, 4 ],
+          "size": [ 47, 18 ],
+          "$pressed_button_name": "button.remove_button",
+          "$button_text": "addExternalServerScreen.removeButtonLabel",
+          "visible": "($edit_mode)"
+        }
+      },
+      {
+        "play_button@add_external_server_old.play_button": {
+          "offset": [ -4, 4 ]
+        }
+      },
+      {
+        "play_disabled_button@add_external_server_old.play_disabled_button": {
+          "offset": [ -4, 4 ]
+        }
+      }
+    ]
+  },
+
+  "panel_content": {
+    "type": "panel",
+    "controls": [
+      {
+        "left_panel@add_external_server_old.left_panel": {}
+      },
+      {
+        "right_panel@add_external_server_old.right_panel": {}
+      }
+    ]
+  },
+
+  "main_add_server_screen_panel@ui_template_old.main_screen_panel": {
+    "$top_bar_panel": "add_external_server_old.top_bar",
+    "$panel_cotent": "add_external_server_old.panel_content"
+  },
+
+  /*///////////////////////////////////////////////////////////////////////////
+  //  Screen.
+  ///////////////////////////////////////////////////////////////////////////*/
+
+  "add_external_server_screen_content": {
+    "type": "panel",
+    "controls": [
+      {
+        "main_control@add_external_server_old.main_add_server_screen_panel": { "layer": 1 }
+      }
+    ]
+  }
+}

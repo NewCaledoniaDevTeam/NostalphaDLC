@@ -1,0 +1,69 @@
+{
+  "namespace": "language_old",
+
+  "top_bar@ui_old_textures.top_bar": {
+    "anchor_from": "top_middle",
+    "anchor_to": "top_middle",
+    "size": [ "100%", 28 ],
+    "controls": [
+      {
+        "back_button@settings_old.back_navigation_tab": {
+          "anchor_from": "top_left",
+          "anchor_to": "top_left",
+          "offset": [ 4, 4 ]
+        }
+      },
+      {
+        "title_text@play_old.base_label": {
+          "anchor_from": "center",
+          "anchor_to": "center",
+          "text": "options.language"
+        }
+      }
+    ]
+  },
+
+  "panel_cotent": {
+    "type": "panel",
+    "anchor_from": "bottom_middle",
+    "anchor_to": "bottom_middle",
+    "offset": [ 0, 0 ],
+    "size": [ "100%", "100%-26px" ],
+    "controls": [
+      { "language_content_panel@settings_old.language_content_panel": {} }
+    ]
+  },
+
+  "main_screen_panel": {
+    "type": "panel",
+    "controls": [
+      {
+        "top_bar@language_old.top_bar": { "layer": 2 }
+      },
+      {
+        "panel_cotent@language_old.panel_cotent": { "layer": 1 }
+      }
+    ]
+  },
+
+  /*///////////////////////////////////////////////////////////////////////////
+  //  Screen.
+  ///////////////////////////////////////////////////////////////////////////*/
+
+  "language_screen_content": {
+    "type": "panel",
+    "controls": [
+      {
+        "main_control@language_old.main_screen_panel": { }
+      }
+    ],
+    "bindings": [
+      {
+        "binding_type": "view",
+        "source_control_name": "language_tab_toggle",
+        "source_property_name": "#toggle_state",
+        "target_property_name": "#visible"
+      }
+    ]
+  }
+}

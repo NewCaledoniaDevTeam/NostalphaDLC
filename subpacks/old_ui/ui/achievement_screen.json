@@ -1,0 +1,85 @@
+{
+  "gamerscore_label": {
+    "shadow": true
+  },
+
+  "gamer_score_value_label": {
+    "shadow": true
+  },
+
+  "achievement_label": {
+    "shadow": true
+  },
+
+  "achievement_value_label": {
+    "shadow": true
+  },
+
+  "time_played_label": {
+    "shadow": true
+  },
+
+  "time_played_value_label": {
+    "shadow": true
+  },
+
+  "percentage_label": {
+    "shadow": true
+  },
+
+  "achievement_desc": {
+    "shadow": true
+  },
+
+  "achievement_gamer_score_value": {
+    "shadow": true
+  },
+
+  "achievement_world_score_value": {
+    "shadow": true
+  },
+
+  "main_banner": {
+    "texture": "textures/uidx/white",
+    "color": [ 0.22, 0.2, 0.22 ]
+  },
+
+  "grey_banner": {
+    "texture": "textures/uidx/white",
+    "color": [ 0.41, 0.38, 0.38 ]
+  },
+
+  "focus_border": {
+    "type": "image",
+    "texture": "textures/ui/square_image_border_white",
+    "color": [ 1.0, 1.0, 1.0 ]
+  },
+
+  "progress_bar_icon": {
+    "offset": [ 0, -1 ], 
+    "controls": [
+      {
+        "full_progress_bar_icon@achievement.full_progress_bar_icon": {
+          "texture": "textures/uidx/white",
+          "color": [ 0.545, 0.745, 0.384 ],
+          "layer": 2
+        }
+      },
+      {
+        "empty_progress_bar_icon@achievement.empty_progress_bar_icon": {
+          "texture": "textures/uidx/white",
+          "color": [ 0.5, 0.5, 0.5 ],
+          "layer": 1
+        }
+      }
+    ]
+  },
+
+  "achievement_screen": {
+    "$screen_content": "achievement_old.achievement_screen_content",
+    "$screen_bg_content": "common_dx.null_panel",
+    "$header_safezone_control": "common_dx.null_panel",
+    "$header_bar_control": "common_dx.null_panel",
+    "$is_full_screen_layout": false
+  }
+}

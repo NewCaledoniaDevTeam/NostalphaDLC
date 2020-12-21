@@ -1,0 +1,31 @@
+{
+    "format_version": 2,
+    "header": {
+        "description": "Minecraft Alpha Style DLC For New Caledonia Shader",
+        "name": "Nostalpha",
+        "uuid": "e2f34af2-8221-4d15-aa0d-3ca3d70c1ee2",
+        "version": [0, 0, 3],
+        "min_engine_version": [ 1, 14, 0 ]
+    },
+    "modules": [
+        {
+            "description": "Minecraft Alpha Style DLC For New Caledonia Shader",
+            "type": "resources",
+            "uuid": "68d03c8d-e839-4587-bbe0-bf9fd55f0977",
+            "version": [0, 0, 1]
+        }
+    ],
+	"subpacks": [
+		
+		{
+			"folder_name": "normal_ui",
+			"name": "Normal UI with old Java textures",
+			"memory_tier": 1
+		},
+		{
+			"folder_name": "old_ui",
+			"name": "Good Old Days PE UI",
+			"memory_tier": 2
+		}
+	]
+}
